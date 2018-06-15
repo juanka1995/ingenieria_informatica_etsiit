@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -e "0 es falso y 1 es verdadero\n"
+echo "El numero $1 es MAYOR que $2 = $[$1>$2]"
+echo "El numero $1 es MENOR que $2 = $[$1<$2]"
+echo "El numero $1 es IGUAL que $2 = $[$1==$2]"

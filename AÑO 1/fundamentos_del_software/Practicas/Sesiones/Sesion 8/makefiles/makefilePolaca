@@ -1,0 +1,28 @@
+# Nombre archivo: makefilePolaca
+# Uso: make -f makefilePolaca
+# Descripción: Mantiene todas las dependencias entre los módulos que utiliza 
+# el calculadoraPolaca.
+
+# Variable que indica el compilador que se va a utilizar
+CC=g++
+
+# Variable que indica el directorio en donde se encuentran los archivos de cabecera
+INCLUDE_DIR= ./cabeceras
+
+calculadoraPolaca: main.o stack.o getop.o getch.o
+	$(CC) -o $@ $^
+
+main.o: main.c
+	$(CC) -I$(INCLUDE_DIR) -c main.c
+
+stack.o: stack.c
+	$(CC) -I$(INCLUDE_DIR) -c stack.c
+
+getop.o: getop.c
+	$(CC) -I$(INCLUDE_DIR) -c getop.c
+
+getch.o: getch.c
+	$(CC) -I$(INCLUDE_DIR) -c getch.c
+
+borrar:
+	rm *.o calculadoraPolaca

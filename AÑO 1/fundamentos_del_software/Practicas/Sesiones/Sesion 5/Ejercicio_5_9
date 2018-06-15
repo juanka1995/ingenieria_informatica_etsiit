@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ $# -eq 1 ] 
+	then
+		plano=`test -f $1 && test -x $1;echo $?`
+		enlace=`test -h $1;echo $?`
+	echo -e "$plano . Si muestra 0 es que es un fichero plano y tiene permisos de ejecucion"
+	echo -e "$enlace . Si muestra 0 es que es un enlace simbolico"
+fi

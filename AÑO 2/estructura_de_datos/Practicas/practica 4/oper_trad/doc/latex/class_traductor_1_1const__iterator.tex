@@ -1,0 +1,117 @@
+\hypertarget{class_traductor_1_1const__iterator}{}\section{Traductor\+:\+:const\+\_\+iterator Class Reference}
+\label{class_traductor_1_1const__iterator}\index{Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}}
+
+
+Clase del iterador constante para iterar sobre un \hyperlink{class_traductor}{Traductor}.  
+
+
+
+
+{\ttfamily \#include $<$traductor.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_traductor_1_1const__iterator_ac864564e8a72514922903f6c553c3986}{const\+\_\+iterator} ()\hypertarget{class_traductor_1_1const__iterator_ac864564e8a72514922903f6c553c3986}{}\label{class_traductor_1_1const__iterator_ac864564e8a72514922903f6c553c3986}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_traductor_1_1const__iterator_af325de50c35d0c4478216061e870cd1c}{const\+\_\+iterator} (const map$<$ string, \hyperlink{class_frase}{Frase}, \hyperlink{classcomparador}{comparador} $>$\+::\hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} i)\hypertarget{class_traductor_1_1const__iterator_af325de50c35d0c4478216061e870cd1c}{}\label{class_traductor_1_1const__iterator_af325de50c35d0c4478216061e870cd1c}
+
+\begin{DoxyCompactList}\small\item\em Constructor copia. \end{DoxyCompactList}\item 
+\hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} \& \hyperlink{class_traductor_1_1const__iterator_adfb628ecd7e8558f3ea0719256468665}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Operador ++ P\+R\+E-\/incremento. \end{DoxyCompactList}\item 
+\hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} \& \hyperlink{class_traductor_1_1const__iterator_aa7ca3b1d16ca9e227a0d94ca74f91dda}{operator-\/-\/} ()
+\begin{DoxyCompactList}\small\item\em Operador -- P\+R\+E-\/decremento. \end{DoxyCompactList}\item 
+bool \hyperlink{class_traductor_1_1const__iterator_a8d9900cfc2b73bb0a0985cbf9d3f0f89}{operator==} (const \hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} \&orig) const 
+\begin{DoxyCompactList}\small\item\em Operador ==. Compara si dos iteradores son iguales. \end{DoxyCompactList}\item 
+bool \hyperlink{class_traductor_1_1const__iterator_a5569019169be01c1bf0f81954e10a43f}{operator!=} (const \hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} \&orig) const 
+\begin{DoxyCompactList}\small\item\em Operador !=. Compara si dos iteradores no son iguales. \end{DoxyCompactList}\item 
+const pair$<$ const string, \hyperlink{class_frase}{Frase} $>$ \& \hyperlink{class_traductor_1_1const__iterator_a16713124baa5eef822858d7c8b223473}{operator$\ast$} () const 
+\begin{DoxyCompactList}\small\item\em Operador $\ast$. Devuelve el contenido de la posicion a la que apuntaba el iterador de \hyperlink{class_traductor}{Traductor}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Traductor}\hypertarget{class_traductor_1_1const__iterator_a64cc3a4ae136f1dbc0435fd0eb54cac0}{}\label{class_traductor_1_1const__iterator_a64cc3a4ae136f1dbc0435fd0eb54cac0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase del iterador constante para iterar sobre un \hyperlink{class_traductor}{Traductor}. 
+
+\subsection{Member Function Documentation}
+\index{Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}}
+\subsubsection[{\texorpdfstring{operator"!=(const const\+\_\+iterator \&orig) const }{operator!=(const const_iterator &orig) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Traductor\+::const\+\_\+iterator\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf const\+\_\+iterator} \&}]{orig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_traductor_1_1const__iterator_a5569019169be01c1bf0f81954e10a43f}{}\label{class_traductor_1_1const__iterator_a5569019169be01c1bf0f81954e10a43f}
+
+
+Operador !=. Compara si dos iteradores no son iguales. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve true si no son iguales y false en caso contrario 
+\end{DoxyReturn}
+\index{Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}}
+\subsubsection[{\texorpdfstring{operator$\ast$() const }{operator*() const }}]{\setlength{\rightskip}{0pt plus 5cm}const pair$<$const string,{\bf Frase}$>$\& Traductor\+::const\+\_\+iterator\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_traductor_1_1const__iterator_a16713124baa5eef822858d7c8b223473}{}\label{class_traductor_1_1const__iterator_a16713124baa5eef822858d7c8b223473}
+
+
+Operador $\ast$. Devuelve el contenido de la posicion a la que apuntaba el iterador de \hyperlink{class_traductor}{Traductor}. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un pair$<$string,\+Frase$>$ con el contenido de la posicion a la que apuntaba el iterador de traductor 
+\end{DoxyReturn}
+\index{Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}}
+\subsubsection[{\texorpdfstring{operator++()}{operator++()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator}\& Traductor\+::const\+\_\+iterator\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_traductor_1_1const__iterator_adfb628ecd7e8558f3ea0719256468665}{}\label{class_traductor_1_1const__iterator_adfb628ecd7e8558f3ea0719256468665}
+
+
+Operador ++ P\+R\+E-\/incremento. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un iterador a la siguiente posicion 
+\end{DoxyReturn}
+\index{Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}}
+\subsubsection[{\texorpdfstring{operator-\/-\/()}{operator--()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf const\+\_\+iterator}\& Traductor\+::const\+\_\+iterator\+::operator-\/-\/ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_traductor_1_1const__iterator_aa7ca3b1d16ca9e227a0d94ca74f91dda}{}\label{class_traductor_1_1const__iterator_aa7ca3b1d16ca9e227a0d94ca74f91dda}
+
+
+Operador -- P\+R\+E-\/decremento. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un iterador a la anterior posicion 
+\end{DoxyReturn}
+\index{Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!Traductor\+::const\+\_\+iterator@{Traductor\+::const\+\_\+iterator}}
+\subsubsection[{\texorpdfstring{operator==(const const\+\_\+iterator \&orig) const }{operator==(const const_iterator &orig) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Traductor\+::const\+\_\+iterator\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf const\+\_\+iterator} \&}]{orig}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_traductor_1_1const__iterator_a8d9900cfc2b73bb0a0985cbf9d3f0f89}{}\label{class_traductor_1_1const__iterator_a8d9900cfc2b73bb0a0985cbf9d3f0f89}
+
+
+Operador ==. Compara si dos iteradores son iguales. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve true si son iguales y false en caso contrario 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{traductor_8h}{traductor.\+h}\end{DoxyCompactItemize}

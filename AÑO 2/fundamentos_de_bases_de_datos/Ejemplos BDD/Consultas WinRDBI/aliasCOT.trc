@@ -1,0 +1,4 @@
+s  :=  {  S  |  proveedor(S)};
+p  :=  {  P  |  pieza(P)};
+j  :=  {  J  |    proyecto(J)};
+spj  :=  {  V  |  ventas(V)};

@@ -1,0 +1,7 @@
+#!/bin/bash -vx
+i=10
+echo "vSinRepConExito-OcurrenciaSR,vSinRepSinExito-OcurrenciaSR,vSinRepConExito-OcurrenciaBasico,vSinRepSinExito-OcurrenciaBasico,vConRepIndeter-OcurrenciaBasico,vSinRepConExito-OcurrenciaCR,vSinRepSinExito-OcurrenciaCR,vConRepIndeter-OcurrenciaCR" $'\n' >> salida_AlgoritmoObvio.csv;
+while (($i <=  500010)) ; do
+	./main $i >> salidaMediaAlgoritmos.csv;
+	let "i+=25000"
+done

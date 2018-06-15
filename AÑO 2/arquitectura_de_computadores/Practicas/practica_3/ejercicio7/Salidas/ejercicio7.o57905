@@ -1,0 +1,76 @@
+Id. usuario del trabajo: C2estudiante17
+Id. del trabajo: 57905.atcgrid
+Nombre del trabajo especificado por usuario: ejercicio7
+Nodo que ejecuta qsub: atcgrid
+Directorio en el que se ha ejecutado qsub: /home/C2estudiante17
+Cola: ac
+Nodos asignados al trabajo:
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+
+static y chunk por defecto
+Tiempo empleado: 0.370430999
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400
+
+static y chunk a 1
+Tiempo empleado: 0.228626296
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400
+
+static y chunk a 64
+Tiempo empleado: 0.232124742
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400
+
+dynamic y chunk por defecto
+Tiempo empleado: 0.181339942
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400
+
+dynamic y chunk a 1
+Tiempo empleado: 0.178328529
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400
+
+dynamic y chunk a 64
+Tiempo empleado: 0.160726827
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400
+
+guided y chunk por defecto
+Tiempo empleado: 0.340246208
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400
+
+guided y chunk a 1
+Tiempo empleado: 0.347764440
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400
+
+guided y chunk a 64
+Tiempo empleado: 0.340446655
+Primer elemento resultado: 471864320
+Ultimo elemento resultado: 943718400

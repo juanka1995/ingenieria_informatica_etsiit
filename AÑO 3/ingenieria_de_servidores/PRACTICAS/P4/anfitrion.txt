@@ -1,0 +1,51 @@
+ 1890  2112/1716:15:10phoronix-test-suite
+ 1891  2112/1716:15:10phoronix-test-suite list-available-tests
+ 1892  2112/1716:15:10clear
+ 1893  2112/1716:15:10phoronix-test-suite list-available-tests
+ 1894  2112/1716:15:10phoronix-test-suite list-available-suites
+ 1895  2112/1716:15:10phoronix-test-suite list-available-tests
+ 1896  2112/1716:15:10clear
+ 1897  2112/1716:15:10phoronix-test-suite
+ 1898  2112/1716:15:10phoronix-test-suite benchmark pts/cachebench
+ 1899  2112/1716:15:10clear
+ 1900  2112/1716:15:10phoronix-test-suite benchmark pts/sudokut
+ 1901  2112/1716:15:10clear
+ 1902  2112/1716:15:10reset
+ 1903  2112/1716:15:10sudo apt-get install apache
+ 1904  2112/1716:15:10sudo apt-get install apache2
+ 1905  2112/1716:15:10CLEAR
+ 1906  2112/1716:15:10clear
+ 1907  2112/1716:15:10exit
+ 1908  2112/1716:15:10rop
+ 1909  2112/1716:15:10top
+ 1910  2112/1716:15:10exit
+ 1911  2112/1716:15:10ifconfig
+ 1912  2112/1716:15:10clear
+ 1913  2112/1716:15:10ab -n 10000 -c 3 http://192.168.56.105/
+ 1914  2112/1716:15:10exit
+ 1915  2112/1716:15:10poweroff
+ 1976  2112/1716:15:10phoronix-test-suite list-available-tests
+ 1977  2112/1716:15:10phoronix-test-suite cachebench
+ 1978  2112/1716:15:10clear
+ 1979  2112/1716:15:10phoronix-test-suite benchmark cachebench
+ 1980  2112/1716:15:10reset
+ 1981  2112/1716:15:10sudo apt-get install openjdk-8-jre
+ 1982  2112/1716:15:10clear
+ 1983  2112/1716:15:10sudo apt-get install openjdk-8-jre
+ 1984  2112/1716:15:10clear
+ 1985  2112/1716:15:10wget http://apache.uvigo.es//jmeter/binaries/apache-jmeter-3.3.
+ 1986  2112/1716:15:10wget http://apache.uvigo.es//jmeter/binaries/apache-jmeter-3.3
+ 1987  2112/1716:15:10ls
+ 1988  2112/1716:15:10wget http://apache.uvigo.es//jmeter/binaries/apache-jmeter-3.3.
+ 1989  2112/1716:15:10wget http://apache.uvigo.es//jmeter/binaries/apache-jmeter-3.3.tg
+ 1990  2112/1716:15:10clear
+ 1991  2112/1716:15:10wget http://apache.uvigo.es//jmeter/binaries/apache-jmeter-3.3.tgz
+ 1992  2112/1716:15:10tar -xvf apache-jmeter-3.3.tgz
+ 1993  2112/1716:15:10cd apache-jmeter-3.3/bin/
+ 1994  2112/1716:15:10clear
+ 1995  2112/1716:15:10cd
+ 1996  2112/1716:15:10clear
+ 1997  2112/1716:15:10cd apache-jmeter-3.3/bin/
+ 1998  2112/1716:15:10./jmeter
+ 1999  2112/1716:15:10exit
+ 2000  2112/1716:15:10poweroff 

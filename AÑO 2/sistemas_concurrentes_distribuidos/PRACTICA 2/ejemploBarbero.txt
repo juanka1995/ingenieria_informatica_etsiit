@@ -1,0 +1,110 @@
+Cliente 2 entra en la barberia
+
+La barbería estaba vacía. Cliente 2 pasa a la silla de pelar
+
+Cliente 1 entra en la barberia
+
+Cliente 1 pasa a la sala de espera
+
+Cliente 3 entra en la barberia
+
+Cliente 3 pasa a la sala de espera
+
+		El barbero esta cortando el pelo al Cliente 2.
+
+		Cliente 2 ha terminado de pelarse
+
+Cliente 2 sale de la barberia
+
+Cliente 1 pasa a la silla de pelar
+
+		El barbero esta cortando el pelo al Cliente 1.
+
+Cliente 2 entra en la barberia
+
+Cliente 2 pasa a la sala de espera
+
+		Cliente 1 ha terminado de pelarse
+
+Cliente 1 sale de la barberia
+
+Cliente 3 pasa a la silla de pelar
+
+		El barbero esta cortando el pelo al Cliente 3.
+
+		Cliente 3 ha terminado de pelarse
+
+Cliente 3 sale de la barberia
+
+Cliente 2 pasa a la silla de pelar
+
+		El barbero esta cortando el pelo al Cliente 2.
+
+Cliente 1 entra en la barberia
+
+Cliente 1 pasa a la sala de espera
+
+		Cliente 2 ha terminado de pelarse
+
+Cliente 2 sale de la barberia
+
+Cliente 1 pasa a la silla de pelar
+
+		El barbero esta cortando el pelo al Cliente 1.
+
+Cliente 3 entra en la barberia
+
+Cliente 3 pasa a la sala de espera
+
+		Cliente 1 ha terminado de pelarse
+
+Cliente 1 sale de la barberia
+
+Cliente 3 pasa a la silla de pelar
+
+		El barbero esta cortando el pelo al Cliente 3.
+
+Cliente 2 entra en la barberia
+
+Cliente 2 pasa a la sala de espera
+
+Cliente 1 entra en la barberia
+
+Cliente 1 pasa a la sala de espera
+
+		Cliente 3 ha terminado de pelarse
+
+Cliente 3 sale de la barberia
+
+Cliente 2 pasa a la silla de pelar
+
+		El barbero esta cortando el pelo al Cliente 2.
+
+Cliente 3 entra en la barberia
+
+Cliente 3 pasa a la sala de espera
+
+		Cliente 2 ha terminado de pelarse
+
+Cliente 2 sale de la barberia
+
+Cliente 1 pasa a la silla de pelar
+
+		El barbero esta cortando el pelo al Cliente 1.
+
+Cliente 2 entra en la barberia
+
+Cliente 2 pasa a la sala de espera
+
+		Cliente 1 ha terminado de pelarse
+
+Cliente 1 sale de la barberia
+
+Cliente 3 pasa a la silla de pelar
+
+		El barbero esta cortando el pelo al Cliente 3.
+
+Cliente 1 entra en la barberia
+
+Cliente 1 pasa a la sala de espera
+

@@ -1,0 +1,176 @@
+Id. usuario del trabajo: C2estudiante17
+Id. del trabajo: 57972.atcgrid
+Nombre del trabajo especificado por usuario: ejercicio10
+Nodo que ejecuta qsub: atcgrid
+Directorio en el que se ha ejecutado qsub: /home/C2estudiante17
+Cola: ac
+Nodos asignados al trabajo:
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+TAMAÑO 350:
+
+Nº hebras: 1
+
+Tiempo empleado: 0.133971568
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 2
+
+Tiempo empleado: 0.067684256
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 3
+
+Tiempo empleado: 0.049634565
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 4
+
+Tiempo empleado: 0.036620360
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 5
+
+Tiempo empleado: 0.028055873
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 6
+
+Tiempo empleado: 0.027845208
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 7
+
+Tiempo empleado: 0.027997985
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 8
+
+Tiempo empleado: 0.023931827
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 9
+
+Tiempo empleado: 0.023624238
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 10
+
+Tiempo empleado: 0.022795338
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 11
+
+Tiempo empleado: 0.023708850
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 12
+
+Tiempo empleado: 0.011838716
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 13
+
+Tiempo empleado: 0.014067359
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 14
+
+Tiempo empleado: 0.014837272
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 15
+
+Tiempo empleado: 0.016449094
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 16
+
+Tiempo empleado: 0.016524721
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 17
+
+Tiempo empleado: 0.021279063
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 18
+
+Tiempo empleado: 0.018728584
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 19
+
+Tiempo empleado: 0.019428264
+Primer elemento resultado: 6432
+Ultimo elemento resultado: 7017
+
+Nº hebras: 20
+
+Tiempo empleado: 0.021785956
+Primer elemento resultado: 7146
+Ultimo elemento resultado: 7104
+
+Nº hebras: 21
+
+Tiempo empleado: 0.023968939
+Primer elemento resultado: 7146
+Ultimo elemento resultado: 7104
+
+Nº hebras: 22
+
+Tiempo empleado: 0.026144251
+Primer elemento resultado: 7146
+Ultimo elemento resultado: 7104
+
+Nº hebras: 23
+
+Tiempo empleado: 0.030101694
+Primer elemento resultado: 7146
+Ultimo elemento resultado: 7104
+
+Nº hebras: 24
+
+Tiempo empleado: 0.034991164
+Primer elemento resultado: 7146
+Ultimo elemento resultado: 7104

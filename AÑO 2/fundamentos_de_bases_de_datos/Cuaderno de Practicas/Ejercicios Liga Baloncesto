@@ -1,0 +1,107 @@
+#### Realización de consultas sin operadores de agregación ###
+
+3.31)
+select * from encuentros;
+
+3.32)
+select codj,code from jugadores order by code;
+
+3.33)
+select codj from faltas where num=null;
+
+3.34)
+select codj from jugadores where code=(
+select code from jugadores where codj='A1') and codj<>'A1';
+
+3.35)
+select codj,localidad from equipos natural join jugadores;
+
+3.36)
+select eq.code,eq2.code from equipos eq,equipos eq2
+where eq.code<>eq2.code;
+
+3.37)
+select distinct elocal from encuentros
+where plocal>pvisitante;
+
+3.38)
+select elocal from encuentros
+where plocal>pvisitante
+intersect
+select evisitante from encuentros
+where pvisitante>plocal;
+
+3.39)
+select elocal from encuentros where plocal>pvisitante
+minus
+select elocal from encuentros where pvisitante>plocal;
+
+select distinct elocal from encuentros e2 where plocal>pvisitante and not exists
+(select elocal from encuentros e1 where pvisitante>plocal and e1.elocal=e2.elocal);
+
+3.40)
+select * from encuentros natural join
+(select elocal,evisitante from encuentros intersect
+(select eq1.code,eq2.code from equipos eq1,equipos eq2 where eq1.localidad=eq2.localidad and eq1.code<>eq2.code));
+
+### Realización de consultas con operadores de agregación ###
+
+3.42)
+select elocal,count(*) as n_encu_ida from encuentros
+group by elocal;
+
+3.43)
+select elocal,evisitante,fecha,plocal,pvisitante,max(abs(plocal-pvisitante)) as max_dif from encuentros
+group by elocal,evisitante,fecha,plocal,pvisitante order by max_dif desc;
+
+3.44)
+select codj from faltas
+minus
+select codj from faltas where num>10;
+
+3.45)
+select elocal,evisitante from encuentros
+minus
+select enc.elocal,enc.evisitante from encuentros enc,encuentros en where enc.pvisitante<en.pvisitante;
+
+select * from encuentros where pvisitante=
+(select max(pvisitante) from encuentros);
+
+3.46)
+select elocal,count(*) as n_victorias from
+(select elocal from encuentros
+where plocal>pvisitante
+union all
+select evisitante from encuentros
+where pvisitante>plocal)
+group by elocal;
+
+3.47)
+select elocal,count(*) as n_victorias from
+(select elocal from encuentros
+where plocal>pvisitante
+union all
+select evisitante from encuentros
+where pvisitante>plocal)
+group by elocal having count(*)=(select max(count(*)) as n_victorias from
+(select elocal from encuentros
+where plocal>pvisitante
+union all
+select evisitante from encuentros
+where pvisitante>plocal)
+group by elocal);
+
+3.48)
+select elocal,round(avg(plocal),2) from encuentros
+group by elocal;
+
+3.49)
+select elocal,sum(plocal) from
+(select elocal,plocal from encuentros
+union all
+select evisitante,pvisitante from encuentros)
+group by elocal having sum(plocal)=(select max(sum(plocal)) from
+(select elocal,plocal from encuentros
+union all
+select evisitante,pvisitante from encuentros)
+group by elocal);

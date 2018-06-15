@@ -1,0 +1,7 @@
+Cada fichero en un vector diferente
+Y luego
+En otro vector
+Pues tienes que ir comprobando si las palabras tienen más de 6 letras o menos
+Y si una palabra de un vector tiene menos de 6
+Pues la tienes que unir con todas las palabras del otro vector que tengan también menos de 6
+Así con todas las palabras que tengan menos de 6 y vas guardando la Unión de esas palabras en otro vector

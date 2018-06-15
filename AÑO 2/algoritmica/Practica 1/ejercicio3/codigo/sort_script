@@ -1,0 +1,18 @@
+#!/bin/bash -vx
+if [ "$#" -ne 1 ]; then
+    echo "Uso: $0 <program_path>"
+else
+
+FILENAME="$1.dat"
+echo $FILENAME
+
+echo -n "" > "$FILENAME"
+
+for i in {100..4000..100} ; do
+	printf "%s\t" $i >> "$FILENAME"
+	for j in {1..100}; do
+		printf "%s\t" `$1 $i | cut -d' ' -f2` >> "$FILENAME"
+	done
+	printf "\n" >> $FILENAME
+done
+fi

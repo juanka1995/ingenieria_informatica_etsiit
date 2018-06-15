@@ -1,0 +1,32 @@
+\hypertarget{repRefranes_invRefranes}{}\section{Invariante de la representación}\label{repRefranes_invRefranes}
+\begin{DoxyVerb}Si R es una instancia de Refranes:
+  R.len_prefijo !< 0
+  R.r_ref !< 0
+  R.caracteres_totales !< 0
+\end{DoxyVerb}
+\hypertarget{repRefranes_faRefranes}{}\section{Función de abstracción}\label{repRefranes_faRefranes}
+Si R es una instancia de \hyperlink{class_refranes}{Refranes}\+: f(\+R) -\/$>$ c-\/1,-\/1 / $\vert$ \textbackslash{} \mbox{[}c0,0\mbox{]} c0,1 .. c0,n(0)-\/1 / $\vert$ \textbackslash{} \mbox{[}cm-\/1,0\mbox{]} cm-\/1,1 .. cm-\/1,n(m-\/1) $\vert$ \textbackslash{} \mbox{[}sm,0\mbox{]} ... sm,n(m)
+
+Donde en cada nivel del arbol hay almacenado un caracter que pertenece al string, habiendo R.\+len\+\_\+prefijo niveles no hojas sin contar la raiz y las hojas en las que se almacena el resto de la cadena, no hay caracteres repetidos en un mismo nivel\+:
+
+Ej\+: \mbox{[}e\mbox{]}\mbox{[}s\mbox{]}\mbox{[}t\mbox{]}\mbox{[}a es una frase\mbox{]} ($\ast$para len\+\_\+prefijo 3) \mbox{[}e\mbox{]}\+: Nivel 0 \mbox{[}s\mbox{]}\+: Nivel 1 \mbox{[}t\mbox{]}\+: Nivel 2 \mbox{[}a es una frase\mbox{]}\+: Nivel 3\hypertarget{repRefranes_invRefranes}{}\section{Invariante de la representación}\label{repRefranes_invRefranes}
+Añadir el invariante de la representación\hypertarget{repRefranes_faRefranes}{}\section{Función de abstracción}\label{repRefranes_faRefranes}
+Añadir la función de abstracción\hypertarget{repRefranes_invRefranes}{}\section{Invariante de la representación}\label{repRefranes_invRefranes}
+\begin{DoxyVerb}Si R es una instancia de Refranes:
+  R.len_prefijo !< 0
+  R.r_ref !< 0
+  R.caracteres_totales !< 0
+\end{DoxyVerb}
+\hypertarget{repRefranes_faRefranes}{}\section{Función de abstracción}\label{repRefranes_faRefranes}
+\begin{DoxyVerb}Si R es una instancia de Refranes:
+  f(R) ->
+    {[s0,0 ; s0,1 ; ... ; s0,n(0)],
+      ...,
+      [sm,0 ; ... ; sm,n(m)]}
+Donde si,j es un string que contiene un refrán
+i es el índice del cubo al que pertenece
+j es la posición de la lista.
+Cada string pertenece a un cubo por una función
+que calcula un hash en base a su estado y a una
+lista a su vez sin ningún orden garantizado.\end{DoxyVerb}
+ 

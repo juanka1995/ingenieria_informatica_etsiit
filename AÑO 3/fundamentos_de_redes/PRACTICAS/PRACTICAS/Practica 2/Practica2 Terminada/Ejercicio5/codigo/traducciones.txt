@@ -1,0 +1,11 @@
+coche
+agua
+casa
+dedo
+ruido
+trabajar
+bailar
+ordenador
+arbol
+luz
+telefono

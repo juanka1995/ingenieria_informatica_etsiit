@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#Solicito al usuario que introduzca un caracter
+read -p "Introduce un caracter: " num
+#Calculo el numero de caracteres introducidos por el usuario
+aux=`expr length $num`
+#Filtro para que solo compruebe filas si es UN caracter
+if [ $aux -eq 1 ]; then
+	#Comprueba en que fila del teclado se encuentra el caracter marcado por el usuario
+	case $num in
+		[0-9])
+			echo "Estas en la fila 1";;
+		[qwertyuiop]|[QWERTYUIOP])
+			echo "Estas en la fila 2";;
+		[asdfghjklñ]|[ASDFGHJKLÑ])
+			echo "Estas en la fila 3";;
+		[zxcvbnm]|ZXCVBNM])
+			echo "Estas en la fila 4";;
+		*)
+			echo "Has pulsado algun metacaracter";;
+	esac
+else
+	echo "Introduce solo UN caracter";
+fi

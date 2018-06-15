@@ -1,0 +1,7 @@
+#!/bin/bash -vx
+echo "" > salida_hanoi.dat
+i=100
+while (($i < 4000 )) ; do
+	./hanoi $i >> salida_hanoi.dat;
+	let "i+=100"
+done

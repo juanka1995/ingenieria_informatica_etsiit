@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# $1 --> ejecutable
+
+rm -f $1".dat"
+
+i=65536
+while [ $i -le 67108864 ]
+do
+  `time ./$1 $i`
+  i=$[$i*2]
+done

@@ -1,0 +1,23 @@
+# Nombre archivo: makefileH
+# Uso: make -f makefileH
+# Descripción: Mantiene todas las dependencias entre los módulos que utiliza el
+# programa1.
+
+CC=g++
+CPPFLAGS=-Wall –I./includes
+SOURCE_MODULES=main.cpp factorial.cpp hello.cpp
+OBJECT_MODULES=$(SOURCE_MODULES:.cpp=.o)
+HOLA=-Wall -g -I$(CC) -c
+EXECUTABLE=programa1
+
+all: $(OBJECT_MODULES) $(EXECUTABLE)
+
+$(EXECUTABLE): $(OBJECT_MODULES)
+	$(CC) $^ -o $@
+
+# Regla para obtener los archivos objeto .o que dependerán de los archivos .cpp
+# Aquí, $< y $@ tomarán valores respectivamente main.cpp y main.o y así sucesivamente
+.o: .cpp
+	$(CC) $(CPPFLAGS) $< -o $@
+prueba:
+	echo $HOLA

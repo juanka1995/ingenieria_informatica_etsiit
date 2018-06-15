@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Thu Apr  6 03:30:57 2017
+
+
+FIT:    data read from 'sinRepConExito.dat'
+        format = z
+        #datapoints = 21
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*log(x)+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 3.5312504635e+03   0.00e+00  8.50e+00    1.000000e+00   1.000000e+00
+   6 3.3214357298e-12  -3.89e-09  8.50e-06    2.026204e-07  -7.034645e-07
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.32144e-12
+rel. change during last iteration : -3.8913e-14
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 4.18106e-07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.74812e-13
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.0262e-07       +/- 4.048e-08    (19.98%)
+b               = -7.03464e-07     +/- 4.852e-07    (68.97%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -0.982  1.000 

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#Inicializo num con un numero fuera del rango para que entre en el while
+num=0
+while [ $num -gt 10 ] || [ $num -lt 1 ]   # Entrara en el while hasta que se cumpla la condicion
+	do
+		read -p "Introduce un numero entre 1 y 10: " num
+	done
+echo "El numero introducido es el numero: $num"

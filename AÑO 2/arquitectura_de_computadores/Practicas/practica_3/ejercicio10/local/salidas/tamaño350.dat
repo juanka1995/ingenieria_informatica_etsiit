@@ -1,0 +1,25 @@
+TAMAÑO 350:
+
+Nº hebras: 1
+
+Tiempo empleado: 0.132934449
+Primer elemento resultado: 7588
+Ultimo elemento resultado: 7105
+
+Nº hebras: 2
+
+Tiempo empleado: 0.069644761
+Primer elemento resultado: 7160
+Ultimo elemento resultado: 6853
+
+Nº hebras: 3
+
+Tiempo empleado: 0.046497681
+Primer elemento resultado: 7160
+Ultimo elemento resultado: 6853
+
+Nº hebras: 4
+
+Tiempo empleado: 0.036425575
+Primer elemento resultado: 7160
+Ultimo elemento resultado: 6853

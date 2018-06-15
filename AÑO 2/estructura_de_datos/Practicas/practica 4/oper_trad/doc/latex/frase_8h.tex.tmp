@@ -1,0 +1,27 @@
+\hypertarget{frase_8h}{}\section{include/frase.h File Reference}
+\label{frase_8h}\index{include/frase.\+h@{include/frase.\+h}}
+
+
+Fichero cabecera del T\+DA \hyperlink{class_frase}{Frase}.  
+
+
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include \char`\"{}frase.\+hxx\char`\"{}}\\*
+Include dependency graph for frase.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_frase}{Frase}
+\begin{DoxyCompactList}\small\item\em T.\+D.\+A. \hyperlink{class_frase}{Frase}. \end{DoxyCompactList}\item 
+class \hyperlink{class_frase_1_1const__iterator}{Frase\+::const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em Clase del iterador constante para iterar sobre un \hyperlink{class_frase}{Frase}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Fichero cabecera del T\+DA \hyperlink{class_frase}{Frase}. 
+

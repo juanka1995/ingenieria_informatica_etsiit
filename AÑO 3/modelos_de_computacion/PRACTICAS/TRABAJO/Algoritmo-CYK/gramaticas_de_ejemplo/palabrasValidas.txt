@@ -1,0 +1,5 @@
+Gramatica 1: abbccd , aabbcd
+
+Gramatica 2: baaba
+
+Gramatica 3: ababba

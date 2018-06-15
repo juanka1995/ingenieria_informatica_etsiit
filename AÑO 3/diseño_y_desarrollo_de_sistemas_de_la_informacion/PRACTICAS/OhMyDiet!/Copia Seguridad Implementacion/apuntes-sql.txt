@@ -1,0 +1,107 @@
+RECETAS
+
+insert into receta (id_receta, titulo, descripcion) values (0,"Macarrones","Macarrones con tomate y queso rayado");
+insert into receta (id_receta, titulo, descripcion) values (1,"Pollo y verdura","Filetes de pollo con menestra de verduras");
+insert into receta (id_receta, titulo, descripcion) values (2,"Ensalada mixta","Tomate, lechuga, atun, esparragos blancos y zanahoria.");
+insert into receta (id_receta, titulo, descripcion) values (3,"Ternera y habas","Escalope de ternera con habas salteadas");
+insert into receta (id_receta, titulo, descripcion) values (4,"Pescado al limón","Pescado, limón, sal, ajo y aceite");
+insert into receta (id_receta, titulo, descripcion) values (5,"Bistec","Cebolla, bistec, oregano, aceite");
+insert into receta (id_receta, titulo, descripcion) values (6,"Paella","Arroz, calamares, pollo, mejillones, gambas");
+
+
+
+INGREDIENTES
+
+insert into ingrediente (id_ingrediente, nombre, categoria) values (0,"Sal","Condimentos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (1,"Macarrones","Pasta");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (2,"Azucar blanco","Edulcorantes");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (3,"Pimienta","Condimentos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (4,"Leche liquida","Productos lácteos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (5,"Nata","Productos lácteos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (6,"Ajo","Frutas y hortalizas");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (7,"Cebolla","Frutas y hortalizas");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (8,"Pimiento","Frutas y hortalizas");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (9,"Tomate","Frutas y hortalizas");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (10,"Pollo","Productos cárnicos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (11,"Ternera","Productos cárnicos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (12,"Cerdo","Productos cárnicos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (13,"Pavo","Productos cárnicos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (14,"Dorada","Productos pesqueros");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (15,"Pulpo","Productos pesqueros");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (16,"Tortas","Productos de panadería");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (17,"Pan leudado","Productos de panadería");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (18,"Pan integral","Productos de panadería");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (19,"Mantequilla","Grasas y aceites");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (20,"Aceite de oliva","Grasas y aceites");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (21,"Aceite de girasol","Grasas y aceites");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (22,"Miel","Edulcorantes");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (23,"Lactosa","Edulcorantes");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (24,"Azucar moreno","Edulcorantes");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (25,"Queso rallado","Lácteos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (26,"Lechuga","Frutas y hortalizas");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (27,"Habas","Frutas y hortalizas");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (28,"Limón","Frutas y hortalizas");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (29,"Oregano","Condimentos");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (30,"Arroz","Cereales");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (31,"Calamares","Productos pesqueros");
+insert into ingrediente (id_ingrediente, nombre, categoria) values (32,"Gambas","Productos pesqueros");
+
+
+
+COMPUESTA
+
+insert into compuesta (id_receta, id_ingrediente) values (0,1);
+insert into compuesta (id_receta, id_ingrediente) values (0,9);
+insert into compuesta (id_receta, id_ingrediente) values (0,0);
+insert into compuesta (id_receta, id_ingrediente) values (0,25);
+
+insert into compuesta (id_receta, id_ingrediente) values (1,10);
+insert into compuesta (id_receta, id_ingrediente) values (1,9);
+insert into compuesta (id_receta, id_ingrediente) values (1,6);
+insert into compuesta (id_receta, id_ingrediente) values (1,7);
+insert into compuesta (id_receta, id_ingrediente) values (1,8);
+insert into compuesta (id_receta, id_ingrediente) values (1,0);
+
+insert into compuesta (id_receta, id_ingrediente) values (2,7);
+insert into compuesta (id_receta, id_ingrediente) values (2,8);
+insert into compuesta (id_receta, id_ingrediente) values (2,6);
+insert into compuesta (id_receta, id_ingrediente) values (2,9);
+insert into compuesta (id_receta, id_ingrediente) values (2,26);
+insert into compuesta (id_receta, id_ingrediente) values (2,0);
+
+insert into compuesta (id_receta, id_ingrediente) values (3,11);
+insert into compuesta (id_receta, id_ingrediente) values (3,27);
+insert into compuesta (id_receta, id_ingrediente) values (3,0);
+
+insert into compuesta (id_receta, id_ingrediente) values (4,0);
+insert into compuesta (id_receta, id_ingrediente) values (4,6);
+insert into compuesta (id_receta, id_ingrediente) values (4,14);
+insert into compuesta (id_receta, id_ingrediente) values (4,20);
+insert into compuesta (id_receta, id_ingrediente) values (4,28);
+
+insert into compuesta (id_receta, id_ingrediente) values (5,7);
+insert into compuesta (id_receta, id_ingrediente) values (5,11);
+insert into compuesta (id_receta, id_ingrediente) values (5,20);
+insert into compuesta (id_receta, id_ingrediente) values (5,29);
+
+insert into compuesta (id_receta, id_ingrediente) values (6,10);
+insert into compuesta (id_receta, id_ingrediente) values (6,30);
+insert into compuesta (id_receta, id_ingrediente) values (6,31);
+insert into compuesta (id_receta, id_ingrediente) values (6,32);
+insert into compuesta (id_receta, id_ingrediente) values (6,0);
+insert into compuesta (id_receta, id_ingrediente) values (6,20);
+
+
+
+DIETA
+insert into dieta (id_dieta,fecha_consumo) values(0,curdate());
+
+
+
+ASIGNAR
+
+insert into asignar (id_dieta,id_receta) values (0,1);
+insert into asignar (id_dieta,id_receta) values (0,2);
+insert into asignar (id_dieta,id_receta) values (0,4);
+insert into asignar (id_dieta,id_receta) values (0,6);
+

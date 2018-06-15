@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ $# == 1 ]; then
+
+	if test -d $1 || test -f $1 ; then
+		#Comprueba si el usuario conectado es el propietario del fichero/directorio introducido
+		if test -O $1  ; then
+			echo -e "Eres propietario del fichero o directorio $1"
+			#Comprueba si el propietario del fichero/directorio tiene permisos de lectura sobre este
+			if test -r $1; then
+				echo "Tienes permisos de lectura sobre $1"
+			else
+				echo "No tienes permisos de lectura sobre $1"
+			fi	
+		else 
+			echo -e "No eres propietario del fichero o directorio $1"
+		fi	
+	else
+		echo -e "Introduce un fichero o directorio valido"
+	fi
+else
+	echo -e "Introduce como maximo un parametro"
+fi

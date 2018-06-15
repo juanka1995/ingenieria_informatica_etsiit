@@ -1,0 +1,138 @@
+Filosofo 0 solicita tenedor der ...9
+Filosofo 2 solicita tenedor izq ...3
+Filosofo 4 solicita tenedor izq ...5
+Ten. 5 recibe petic. de 4
+Filosofo 2 solicita tenedor der ...1
+Ten. 3 recibe petic. de 2
+Filosofo 8 solicita tenedor izq ...9
+Filosofo 6 solicita tenedor izq ...7
+Filosofo 4 solicita tenedor der ...3
+Filosofo 6 solicita tenedor der ...5
+Ten. 7 recibe petic. de 6
+Filosofo 2 COMIENDO
+Ten. 1 recibe petic. de 2
+Filosofo 0 solicita tenedor izq ...1
+Ten. 9 recibe petic. de 0
+Filosofo 2 suelta tenedor izq ...3
+Ten. 3 recibe liberac. de 2
+Filosofo 2 suelta tenedor der ...1
+Filosofo 2 PENSANDO
+Filosofo 0 COMIENDO
+Ten. 1 recibe liberac. de 2
+Ten. 1 recibe petic. de 0
+Filosofo 4 COMIENDO
+Ten. 3 recibe petic. de 4
+Filosofo 2 solicita tenedor izq ...3
+Filosofo 0 suelta tenedor izq ...1
+Filosofo 0 suelta tenedor der ...9
+Ten. 1 recibe liberac. de 0
+Ten. 9 recibe liberac. de 0
+Filosofo 0 PENSANDO
+Ten. 9 recibe petic. de 8
+Filosofo 8 solicita tenedor der ...7
+Filosofo 4 suelta tenedor izq ...5
+Filosofo 4 suelta tenedor der ...3
+Ten. 5 recibe liberac. de 4
+Ten. 5 recibe petic. de 6
+Filosofo 6 COMIENDO
+Filosofo 4 PENSANDO
+Ten. 3 recibe liberac. de 4
+Ten. 3 recibe petic. de 2
+Ten. 1 recibe petic. de 2
+Filosofo 2 solicita tenedor der ...1
+Filosofo 2 COMIENDO
+Filosofo 0 solicita tenedor der ...9
+Filosofo 4 solicita tenedor izq ...5
+Filosofo 2 suelta tenedor izq ...3
+Ten. 3 recibe liberac. de 2
+Filosofo 2 suelta tenedor der ...1
+Filosofo 2 PENSANDO
+Ten. 1 recibe liberac. de 2
+Filosofo 2 solicita tenedor izq ...3
+Ten. 3 recibe petic. de 2
+Filosofo 2 solicita tenedor der ...1
+Ten. 1 recibe petic. de 2
+Filosofo 2 COMIENDO
+Filosofo 6 suelta tenedor izq ...7
+Filosofo 8 COMIENDO
+Filosofo 6 suelta tenedor der ...5
+Ten. 7 recibe liberac. de 6
+Ten. 7 recibe petic. de 8
+Ten. 5 recibe liberac. de 6
+Ten. 5 recibe petic. de 4
+Filosofo 4 solicita tenedor der ...3
+Filosofo 6 PENSANDO
+Filosofo 6 solicita tenedor izq ...7
+Filosofo 2 suelta tenedor izq ...3
+Ten. 3 recibe liberac. de 2
+Ten. 3 recibe petic. de 4
+Filosofo 2 suelta tenedor der ...1
+Filosofo 2 PENSANDO
+Ten. 1 recibe liberac. de 2
+Filosofo 4 COMIENDO
+Filosofo 2 solicita tenedor izq ...3
+Filosofo 8 suelta tenedor izq ...9
+Filosofo 8 suelta tenedor der ...7
+Ten. 1 recibe petic. de 0
+Ten. 9 recibe liberac. de 8
+Ten. 9 recibe petic. de 0
+Filosofo 0 solicita tenedor izq ...1
+Filosofo 0 COMIENDO
+Ten. 7 recibe liberac. de 8
+Ten. 7 recibe petic. de 6
+Filosofo 8 PENSANDO
+Filosofo 6 solicita tenedor der ...5
+Filosofo 8 solicita tenedor izq ...9
+Ten. 1 recibe liberac. de 0
+Filosofo 0 suelta tenedor izq ...1
+Filosofo 0 suelta tenedor der ...9
+Ten. 9 recibe liberac. de 0
+Ten. 9 recibe petic. de 8
+Filosofo 0 PENSANDO
+Filosofo 8 solicita tenedor der ...7
+Filosofo 0 solicita tenedor der ...9
+Filosofo 4 suelta tenedor izq ...5
+Ten. 3 recibe liberac. de 4
+Ten. 3 recibe petic. de 2
+Filosofo 6 COMIENDO
+Ten. 5 recibe liberac. de 4
+Ten. 5 recibe petic. de 6
+Filosofo 4 suelta tenedor der ...3
+Filosofo 4 PENSANDO
+Filosofo 2 solicita tenedor der ...1
+Filosofo 2 COMIENDO
+Ten. 1 recibe petic. de 2
+Filosofo 4 solicita tenedor izq ...5
+Filosofo 6 suelta tenedor izq ...7
+Filosofo 6 suelta tenedor der ...5
+Ten. 5 recibe liberac. de 6
+Ten. 5 recibe petic. de 4
+Ten. 7 recibe liberac. de 6
+Ten. 7 recibe petic. de 8
+Filosofo 4 solicita tenedor der ...3
+Filosofo 6 PENSANDO
+Filosofo 8 COMIENDO
+Filosofo 2 suelta tenedor izq ...3
+Ten. 3 recibe liberac. de 2
+Ten. 3 recibe petic. de 4
+Filosofo 2 suelta tenedor der ...1
+Filosofo 4 COMIENDO
+Filosofo 2 PENSANDO
+Ten. 1 recibe liberac. de 2
+Filosofo 6 solicita tenedor izq ...7
+Filosofo 2 solicita tenedor izq ...3
+Filosofo 8 suelta tenedor izq ...9
+Filosofo 8 suelta tenedor der ...7
+Ten. 9 recibe liberac. de 8
+Ten. 9 recibe petic. de 0
+Filosofo 0 solicita tenedor izq ...1
+Ten. 7 recibe liberac. de 8
+Ten. 7 recibe petic. de 6
+Filosofo 8 PENSANDO
+Filosofo 6 solicita tenedor der ...5
+Filosofo 0 COMIENDO
+Ten. 1 recibe petic. de 0
+Filosofo 8 solicita tenedor izq ...9
+Filosofo 0 suelta tenedor izq ...1
+Filosofo 4 suelta tenedor izq ...5
+Filosofo 4 suelta tenedor der ...3

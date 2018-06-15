@@ -1,0 +1,174 @@
+\hypertarget{class_traductor}{}\section{Traductor Class Reference}
+\label{class_traductor}\index{Traductor@{Traductor}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em Clase del iterador constante para iterar sobre un \hyperlink{class_traductor}{Traductor}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_traductor_a9723a49b5b82689bff2b827ca2da3f45}{Traductor} ()\hypertarget{class_traductor_a9723a49b5b82689bff2b827ca2da3f45}{}\label{class_traductor_a9723a49b5b82689bff2b827ca2da3f45}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} \hyperlink{class_traductor_a4af21754c460def90bc2a9e11166fde2}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Metodo encargado de devolver un iterador constante con la posicion de la primera entrada del mapa. \end{DoxyCompactList}\item 
+\hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} \hyperlink{class_traductor_a149165eba2b47a9e5942369cb139be9b}{end} () const 
+\begin{DoxyCompactList}\small\item\em Metodo encargado de devolver un iterador constante con la posicion de la ultima entrada del mapa. \end{DoxyCompactList}\item 
+\hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} \hyperlink{class_traductor_a8992959f19a78b5cd0a96a5227170d31}{find} (const string \&clave) const 
+\begin{DoxyCompactList}\small\item\em Metodo encargado de buscar una clave concreta en el mapa traducciones. \end{DoxyCompactList}\item 
+void \hyperlink{class_traductor_a2f7bd688f7724944c9093970fd32c5eb}{Insertar\+Frase} (const \hyperlink{class_frase}{Frase} \&ff)\hypertarget{class_traductor_a2f7bd688f7724944c9093970fd32c5eb}{}\label{class_traductor_a2f7bd688f7724944c9093970fd32c5eb}
+
+\begin{DoxyCompactList}\small\item\em Inserta una nueva frase al mapa de frases utilizando los \mbox{[}\mbox{]}. Si no existe dicha clave la crea e inserta la correspondiente frase al valor. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_traductor_ad80103faf9d79807b3d1c6718ce7d14b}{Get\+Traducciones} (const string \&ff)
+\begin{DoxyCompactList}\small\item\em Devuelve los destinos de un origen especificado. \end{DoxyCompactList}\item 
+void \hyperlink{class_traductor_a746af8812dd1a75e66fece798d151a8c}{to\+Lower} (string \&ff)
+\begin{DoxyCompactList}\small\item\em Pasa un string a minusculas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+istream \& \hyperlink{class_traductor_a60ee2a06b6560b2edec8ad3fb223e903}{operator$>$$>$} (istream \&o, \hyperlink{class_traductor}{Traductor} \&tr)
+\begin{DoxyCompactList}\small\item\em Sobrecarga el operador $>$$>$ para añadir al mapa de traducciones el contenido de un fichero. \end{DoxyCompactList}\item 
+ostream \& \hyperlink{class_traductor_a78120f314da935ebbe07cf3e4f3b26d7}{operator$<$$<$} (ostream \&os, const \hyperlink{class_traductor}{Traductor} \&tr)
+\begin{DoxyCompactList}\small\item\em Sobrecarga el operador $<$$<$ para mostrar el conjunto de frases y sus traducciones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\index{Traductor@{Traductor}!begin@{begin}}
+\index{begin@{begin}!Traductor@{Traductor}}
+\subsubsection[{\texorpdfstring{begin() const }{begin() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Traductor\+::const\+\_\+iterator} Traductor\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_traductor_a4af21754c460def90bc2a9e11166fde2}{}\label{class_traductor_a4af21754c460def90bc2a9e11166fde2}
+
+
+Metodo encargado de devolver un iterador constante con la posicion de la primera entrada del mapa. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un \hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} apuntando a la primera entrada del map traducciones 
+\end{DoxyReturn}
+\index{Traductor@{Traductor}!end@{end}}
+\index{end@{end}!Traductor@{Traductor}}
+\subsubsection[{\texorpdfstring{end() const }{end() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Traductor\+::const\+\_\+iterator} Traductor\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_traductor_a149165eba2b47a9e5942369cb139be9b}{}\label{class_traductor_a149165eba2b47a9e5942369cb139be9b}
+
+
+Metodo encargado de devolver un iterador constante con la posicion de la ultima entrada del mapa. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un \hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} apuntando a la ultima entrada del map traducciones 
+\end{DoxyReturn}
+\index{Traductor@{Traductor}!find@{find}}
+\index{find@{find}!Traductor@{Traductor}}
+\subsubsection[{\texorpdfstring{find(const string \&clave) const }{find(const string &clave) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Traductor\+::const\+\_\+iterator} Traductor\+::find (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{clave}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_traductor_a8992959f19a78b5cd0a96a5227170d31}{}\label{class_traductor_a8992959f19a78b5cd0a96a5227170d31}
+
+
+Metodo encargado de buscar una clave concreta en el mapa traducciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clave\+:string} & de la clave a buscar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Si encuentra la clave en el mapa devuelve un \hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} con la posicion de dicha clave, en caso contrario devuelve un \hyperlink{class_traductor_1_1const__iterator}{const\+\_\+iterator} con la traducciones.\+end() 
+\end{DoxyReturn}
+\index{Traductor@{Traductor}!Get\+Traducciones@{Get\+Traducciones}}
+\index{Get\+Traducciones@{Get\+Traducciones}!Traductor@{Traductor}}
+\subsubsection[{\texorpdfstring{Get\+Traducciones(const string \&ff)}{GetTraducciones(const string &ff)}}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Traductor\+::\+Get\+Traducciones (
+\begin{DoxyParamCaption}
+\item[{const string \&}]{ff}
+\end{DoxyParamCaption}
+)}\hypertarget{class_traductor_ad80103faf9d79807b3d1c6718ce7d14b}{}\label{class_traductor_ad80103faf9d79807b3d1c6718ce7d14b}
+
+
+Devuelve los destinos de un origen especificado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ff\+:string} & que contiene el origen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Asumimos que el string pasado por parametro es un origen existente dentro del conjunto de traducciones 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Devuelve un vector$<$string$>$ con los destinos del origen especificado 
+\end{DoxyReturn}
+\index{Traductor@{Traductor}!to\+Lower@{to\+Lower}}
+\index{to\+Lower@{to\+Lower}!Traductor@{Traductor}}
+\subsubsection[{\texorpdfstring{to\+Lower(string \&ff)}{toLower(string &ff)}}]{\setlength{\rightskip}{0pt plus 5cm}void Traductor\+::to\+Lower (
+\begin{DoxyParamCaption}
+\item[{string \&}]{ff}
+\end{DoxyParamCaption}
+)}\hypertarget{class_traductor_a746af8812dd1a75e66fece798d151a8c}{}\label{class_traductor_a746af8812dd1a75e66fece798d151a8c}
+
+
+Pasa un string a minusculas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ff\+:string} & que deseamos pasar a minusculas \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Traductor@{Traductor}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Traductor@{Traductor}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Traductor} \&}]{tr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_traductor_a78120f314da935ebbe07cf3e4f3b26d7}{}\label{class_traductor_a78120f314da935ebbe07cf3e4f3b26d7}
+
+
+Sobrecarga el operador $<$$<$ para mostrar el conjunto de frases y sus traducciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os\+:flujo} & de salida \\
+\hline
+{\em cf\+:conjunto} & de frases de las que queremos mostrar sus traduciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el flujo de salida 
+\end{DoxyReturn}
+\index{Traductor@{Traductor}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Traductor@{Traductor}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{istream \&}]{o, }
+\item[{{\bf Traductor} \&}]{tr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_traductor_a60ee2a06b6560b2edec8ad3fb223e903}{}\label{class_traductor_a60ee2a06b6560b2edec8ad3fb223e903}
+
+
+Sobrecarga el operador $>$$>$ para añadir al mapa de traducciones el contenido de un fichero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+:flujo} & de entrada \\
+\hline
+{\em tr\+:traductor} & en el que guardaremos el contenido del fichero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el flujo 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{traductor_8h}{traductor.\+h}\item 
+include/traductor.\+hxx\end{DoxyCompactItemize}

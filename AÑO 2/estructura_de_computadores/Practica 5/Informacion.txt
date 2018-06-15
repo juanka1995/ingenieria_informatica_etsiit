@@ -1,0 +1,49 @@
+
+########### INFO ################
+
+Alumno:	Juan Carlos Ruiz García
+Grupo: C2
+Año: 2016/2017
+
+##### CARACTERISTICAS PC ########
+
+		MAKE INFO
+
+line size = 64B
+cache size = 32K/32K/256K/3072K/
+cache level = 1/1/2/3/
+cache type = Data/Instruction/Unified/Unified/
+
+		LSCPU
+
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    2
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 69
+Model name:            Intel(R) Core(TM) i5-4210U CPU @ 1.70GHz
+Stepping:              1
+CPU MHz:               800.062
+CPU max MHz:           2700,0000
+CPU min MHz:           800,0000
+BogoMIPS:              4789.07
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              3072K
+NUMA node0 CPU(s):     0-3
+
+################## EXTRA ######################
+
+	He completado la totalidad de la practica y a además he subido el fichero size_long.c que irá recorriendo las distintas memorias
+	de mi PC hasta llegar a disco y hacer swapping.
+	Se me olvidó modificar el makefile y en la grafica del size_long.png no aparece los ejes a partir de 2GB, pero pueden apreciarse
+	perfectamente los niveles.

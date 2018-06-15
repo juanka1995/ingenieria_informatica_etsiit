@@ -1,0 +1,89 @@
+Fumador 2 tiene CERILLAS y TABACO. Espera PAPEL.
+
+
+Fumador 2 esperando PAPEL.
+
+Fumador 1 tiene PAPEL y CERILLAS. Espera TABACO.
+
+
+Fumador 1 esperando TABACO.
+
+Fumador 3 tiene TABACO y PAPEL. Espera CERILLAS.
+
+
+Fumador 3 esperando CERILLAS.
+
+		Estanquero pone CERILLAS en la mesa.
+
+Fumador 3 fumando...
+
+		Estanquero pone CERILLAS en la mesa.
+
+Fumador 3 termina de fumar.
+
+Fumador 3 esperando CERILLAS.
+
+Fumador 3 fumando...
+
+		Estanquero pone TABACO en la mesa.
+
+Fumador 1 fumando...
+
+		Estanquero pone CERILLAS en la mesa.
+
+Fumador 3 termina de fumar.
+
+Fumador 3 esperando CERILLAS.
+
+Fumador 3 fumando...
+
+		Estanquero pone CERILLAS en la mesa.
+
+Fumador 1 termina de fumar.
+
+Fumador 1 esperando TABACO.
+
+Fumador 3 termina de fumar.
+
+Fumador 3 esperando CERILLAS.
+
+Fumador 3 fumando...
+
+		Estanquero pone TABACO en la mesa.
+
+Fumador 1 fumando...
+
+		Estanquero pone CERILLAS en la mesa.
+
+Fumador 3 termina de fumar.
+
+Fumador 3 esperando CERILLAS.
+
+Fumador 3 fumando...
+
+		Estanquero pone CERILLAS en la mesa.
+
+Fumador 1 termina de fumar.
+
+Fumador 1 esperando TABACO.
+
+Fumador 3 termina de fumar.
+
+Fumador 3 esperando CERILLAS.
+
+Fumador 3 fumando...
+
+		Estanquero pone TABACO en la mesa.
+
+Fumador 1 fumando...
+
+		Estanquero pone PAPEL en la mesa.
+
+Fumador 2 fumando...
+
+		Estanquero pone TABACO en la mesa.
+
+Fumador 2 termina de fumar.
+
+Fumador 2 esperando PAPEL.
+

@@ -1,0 +1,34 @@
+#!/bin/bash
+#Primer argumento: nombre del directorio donde crear los ficheros vacios
+#Segundo argumento: numero de ficheros a crear
+#Tercer argumento: coletilla para los ficheros
+
+#Comprueba el numero de argumentos
+if [ $# == 3 ]; then
+	#Comprueba que el argumento 2 este comprendido entre 1 y 99
+	if [ $2 -lt 100 ] && [ $2 -ge 1 ]; then
+		#Comprueba si existe la carpeta con el nombre del argumento 1
+		if ! test -d ./$1; then
+			mkdir ./$1		
+		fi
+		#Comprueba los permisos de escritura y lectura del usuario
+		if ! test -w ./$1 && ! test -r ./$1; then
+			chmod u+rw $1
+		fi
+		num=0
+		#Crea los ficheros desde 01 hasta $2 con la coletilla de $3
+		while [ $num -lt $2 ]
+			do
+				if [ $num -lt 10 ]; then
+					touch ./$1/$3"0$num"
+				else
+					touch ./$1/$3"$num"				
+				fi
+				let num=$num+1
+			done
+	else
+		echo "Introduzca una secuencia comprendida entre 1 y 99"
+	fi	
+else
+	echo "Introduce el numero correcto de argumentos"
+fi

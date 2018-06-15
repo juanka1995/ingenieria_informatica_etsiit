@@ -1,0 +1,95 @@
+#!/bin/bash
+while :
+do
+	clear
+	echo -e "¿Que desea comprimir?: \n"
+	echo -e "1) El contenido de un directorio"
+	echo -e "2) Una serie de ficheros"
+	echo -e "3) Salir\n"
+	
+	read -p "Introduce una opción: " opcion
+	while [ $opcion -lt 1 ] || [ $opcion -gt 3 ]
+		do
+			read -p "Introduce una opción: " opcion
+		done
+	#Creamos el directorio CopiasSeguridad si no existe
+	if ! test -d $HOME/CopiasSeguridad; then
+		mkdir $HOME/CopiasSeguridad
+	fi
+	#Elegimos una de las opciones
+	case $opcion in
+	1)
+		clear
+	#Verificamos que el directorio introducido exista
+		direc=
+		while [ -z "$direc" ]
+			do
+				read -p "Introduce el directorio que deseas comprimir: " direc
+				while [ ! -d $direc ]
+					do
+						read -p "Introduce el directorio que deseas comprimir: " direc
+					done
+			done
+	#Comprimimos el contenido del directorio y lo guardamos en la carpeta CopiasSeguridad
+		tar -cvf $HOME/CopiasSeguridad/"copia`date +%y%m%d`.tar" $direc 1> /dev/null
+		echo -e "\nCopia realizada correctamente en: \n$HOME/CopiasSeguridad/"
+		ls $HOME/CopiasSeguridad/
+		read -p 'Presiona [ENTER] para volver al menu...'
+;;
+	2)
+		clear
+	#Verificamos que el directorio donde se encuentran los ficheros a comprimir existe
+		direc=
+		while [ -z "$direc" ]
+			do
+				read -p "Introduce el directorio donde se encuentran los ficheros: " direc
+				while [ ! -d $direc ]
+					do
+						read -p "Introduce el directorio donde se encuentran los ficheros: " direc
+					done
+			done
+	#Creamos una lista con los nombres de los ficheros a comprimir
+		correcto=false
+		while [ $correcto == false ]
+			do
+				clear
+				ls -l $direc
+				echo -e "\n"
+				read -p "Introduce la lista de ficheros separados por espacio: " lista
+			#Comprobamos que los ficheros introducidos en la lista existen
+				for c in $lista
+					do
+						if test -f $direc/$c; then
+							correcto=true
+						else
+							correcto=false
+							clear
+							echo "ERROR! Introduce el nombre de los ficheros correctamente!!"
+							sleep 2
+							break	
+						fi
+							
+					done
+			done
+	#Creamos el directorio con la fecha actual en CopiasSeguridad
+		mkdir $HOME/CopiasSeguridad/"copia`date +%y%m%d`"/
+	#Comprimimos los ficheros uno a uno y los vamos moviendo a dicho directorio
+		for c in $lista
+			do
+				gzip $direc/$c 1> /dev/null
+				mv $direc/$c.gz $HOME/CopiasSeguridad/"copia`date +%y%m%d`"/
+			done
+		clear
+		echo -e "\nCopia realizada correctamente en: \n$HOME/CopiasSeguridad/"copia`date +%y%m%d`""
+		ls -l $HOME/CopiasSeguridad/"copia`date +%y%m%d`"/
+		read -p 'Presiona [ENTER] para volver al menu...'
+;;
+	3)
+		clear
+		echo "Hasta pronto :)"
+		exit
+;;
+	*)
+;;
+	esac
+done

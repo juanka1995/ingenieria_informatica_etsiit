@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1431352075 source:/home/manupc/Dropbox/docencia/ALG_1415/Practicas/PracticasLaboratorio/practicaLaboratorio_3_Kruskal_1415/Solucion/Greedy/main.cpp
+	<iostream>
+	"Problema.h"
+	"Solucion.h"
+	"Algoritmos.h"
+
+1430748068 source:/home/manupc/Dropbox/docencia/ALG_1415/Practicas/PracticasLaboratorio/practicaLaboratorio_3_Kruskal_1415/Solucion/Greedy/src/Problema.cpp
+	"Problema.h"
+	<fstream>
+	<iostream>
+
+1430748087 /home/manupc/Dropbox/docencia/ALG_1415/Practicas/PracticasLaboratorio/practicaLaboratorio_3_Kruskal_1415/Solucion/Greedy/include/Problema.h
+	<string>
+
+1430751013 source:/home/manupc/Dropbox/docencia/ALG_1415/Practicas/PracticasLaboratorio/practicaLaboratorio_3_Kruskal_1415/Solucion/Greedy/src/Solucion.cpp
+	"Solucion.h"
+
+1430748904 /home/manupc/Dropbox/docencia/ALG_1415/Practicas/PracticasLaboratorio/practicaLaboratorio_3_Kruskal_1415/Solucion/Greedy/include/Solucion.h
+	"Problema.h"
+
+1431351887 source:/home/manupc/Dropbox/docencia/ALG_1415/Practicas/PracticasLaboratorio/practicaLaboratorio_3_Kruskal_1415/Solucion/Greedy/src/Algoritmos.cpp
+
+1431352001 /home/manupc/Dropbox/docencia/ALG_1415/Practicas/PracticasLaboratorio/practicaLaboratorio_3_Kruskal_1415/Solucion/Greedy/include/Algoritmos.h
+	"Problema.h"
+	"Solucion.h"
+

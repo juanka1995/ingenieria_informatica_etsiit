@@ -1,0 +1,57 @@
+####################################################################################################
+
+Nombre:		Juan Carlos Ruiz García
+DNI:		26510953-A
+Grupo:		C2
+
+####################################################################################################
+
+Fichero:	ProductorConsumidor.java
+Nº Objetos Condicion:	2
+
+Explicacion:
+	En este ejercicio he añadido los siguiente cambios:
+		- 2 variables condicion de las cuales:
+			- 1 para controlar cuando se inicia o se detiene la escritura de datos en el buffer (Condition escritura)
+			- 1 para controlar cuando se inicia o se detiene la lectura de datos del buffer (Condition lectura)
+	Nombre fichero de salida:
+		- ejemploProCon.txt
+
+####################################################################################################
+
+Fichero:	Fumadores.java
+Nº Objetos Condicion:	4 ([3] + 1)
+
+Explicación:
+	En este ejercicio utilizo:
+		- 4 variables condicion de las cuales:
+			- 3 variables condicion forma un vector de condiciones, teniendo una condicion para cada fumador (Condition[] fumador)
+				{ El proposito de utilizar una variable condicion para cada fumador es para que el estanquero pueda liberar a un fumador
+				concreto dependiendo del producto que ponga en la mesa. }
+			- 1 variable condicion para el estanquero (Condition estanquero)
+				{ El proposito de utilizar una variable condicion para el estanquero es controlar cuando el estanquero debe poner un ingrediente
+				en la mesa y cuando debe esperar a que el ingrediente sea cogido. }
+	Nombre fichero de salida:
+		- ejemploFumadores.txt
+
+####################################################################################################
+
+Fichero:	BarberoDurmiente.java
+Nº Objetos Condicion:	3
+
+Explicacion:
+	En este ejercicio utilizo:
+		- 3 variables condicion de las cuales:
+			- 1 para controlar los clientes que hay en la sala de espera (Condition sala_espera)
+				{ El proposito de utilizar una variable condicion para la sala de espera es para que los nuevos clientes
+				que entran a pelarse y la silla de pelar esta ocupada. Hay esperarian hasta que sea su turno y el barbero
+				los avise de que pasen a la silla de pelar. }
+			- 1 para controlar que cliente esta pelando el barbero (Condition silla_pelar)
+				{ El proposito de utilizar una variable condicion para la silla de pelar es para aislar al resto de clientes
+				del que esta pelando el barbero en ese momento. }
+			- 1 para controlar cuando el barbero tiene que trabajar y cuando debe dormir (Condition barbero)
+				{ El proposito de utilizar una variable condicion para el barbero es poder poner al barbero a dormir (no utilizar CPU)
+				cuando no haya nadie en la barberia y ponerlo a trabajar (utilizar CPU) cuando entre alguien. }
+	Nombre fichero de salida:
+		- ejemploBarbero.txt
+		

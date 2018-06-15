@@ -1,0 +1,44 @@
+Id. usuario del trabajo: C2estudiante17
+Id. del trabajo: 52271.atcgrid
+Nombre del trabajo especificado por usuario: ejercicio10
+Nodo que ejecuta qsub: atcgrid
+Directorio en el que se ha ejecutado qsub: /home/C2estudiante17
+Cola: ac
+Nodos asignados al trabajo:
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+Tiempo(seg.):0.004344225
+Tiempo(seg.):0.004478766
+Tiempo(seg.):0.004420709
+Tiempo(seg.):0.004045537
+Tiempo(seg.):0.000840843
+Tiempo(seg.):0.003504353
+Tiempo(seg.):0.005090065
+Tiempo(seg.):0.005326105
+Tiempo(seg.):0.013351476
+Tiempo(seg.):0.026217362
+Tiempo(seg.):0.043485239
+Tiempo(seg.):0.079189209
+Tiempo(seg.):0.144195233

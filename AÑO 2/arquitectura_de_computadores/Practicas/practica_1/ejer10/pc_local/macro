@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# $1 --> ejecutable
+
+rm -f $1".dat"
+
+i=16384
+while [ $i -le 67108864 ]
+do
+  ./$1 $i >> $1".dat"
+  i=$[$i*2]
+done

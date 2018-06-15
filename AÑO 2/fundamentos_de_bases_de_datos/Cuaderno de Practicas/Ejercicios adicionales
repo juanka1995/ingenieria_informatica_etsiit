@@ -1,0 +1,24 @@
+3.42)
+select codpro from ventas
+group by codpro having count(*)>(
+select count(*) from ventas where codpro='S1');
+
+3.43)
+select codpro from ventas
+group by codpro having sum(cantidad)=(select max(sum(cantidad)) from ventas group by codpro);
+
+3.44)
+
+
+3.45)
+select codpro from ventas
+group by codpro having count(*)>=10;
+
+3.46)
+select distinct v.codpro from ventas v where v.codpro<>'S1'and not exists
+(select codpie from ventas where codpro='S1'
+minus
+select v2.codpie from ventas v2 where v.codpro=v2.codpro);
+
+3.47)
+

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+let dias_restantes=365-`date +%j`
+
+if [ "$1" == "-h" ]; then
+	echo -e "Intrucciones del guion:\n"
+	echo "Este guion va a calcular los dias que quedan para fin de año y va a mostrar un mensaje diciendo si el numero de dias es multiplo de 5 o no."
+	echo "Si ejecutamos el nombre del fichero con la opcion -h accederemos a la ayuda." 
+
+elif [ `echo $[dias_restantes%5]` == 0 ]; then 
+	echo "Quedan $dias_restantes dias para fin de año y es multiplo de 5"
+else 
+	echo "Quedan $dias_restantes dias para fin de año pero no es multiplo de 5"
+fi

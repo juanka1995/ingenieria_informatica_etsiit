@@ -1,0 +1,199 @@
+    1  2112/1716:23:00clear
+    2  2112/1716:23:00cat /mnt/
+    3  2112/1716:23:00ls /mnt/
+    4  2112/1716:23:00ls /dev/sda5 
+    5  2112/1716:23:00ls /dev/sda5/
+    6  2112/1716:23:00ls /dev/sda2
+    7  2112/1716:23:00ls /dev/sda2/ç
+    8  2112/1716:23:00ls /dev/sda2/
+    9  2112/1716:23:00clear
+   10  2112/1716:23:00sudo apt-get install nano
+   11  2112/1716:23:00sudo apt-get upgrade
+   12  2112/1716:23:00clear
+   13  2112/1716:23:00ping www.google.es
+   14  2112/1716:23:00poweroff 
+   15  2112/1716:23:00clear
+   16  2112/1716:23:00exit
+   17  2112/1716:23:00sudo apt-get upgrade
+   18  2112/1716:23:00sudo apt-get update
+   19  2112/1716:23:00sudo apt-get upgrade
+   20  2112/1716:23:00reset
+   21  2112/1716:23:00sudo nano /etc/network/interfaces
+   22  2112/1716:23:00ifconfig
+   23  2112/1716:23:00sudo nano /etc/network/interfaces
+   24  2112/1716:23:00clear
+   25  2112/1716:23:00systemctl restart networking
+   26  2112/1716:23:00ping www.google.es
+   27  2112/1716:23:00ifconfig
+   28  2112/1716:23:00clear
+   29  2112/1716:23:00reset
+   30  2112/1716:23:00ifconfig
+   31  2112/1716:23:00ping 1952
+   32  2112/1716:23:00ping 192.168.56.110
+   33  2112/1716:23:00clear
+   34  2112/1716:23:00sudo apt-get install ssh
+   35  2112/1716:23:00sudo apt-get remove ssh
+   36  2112/1716:23:00sudo apt-get install openshh-servr
+   37  2112/1716:23:00sudo apt-get install openshh-server
+   38  2112/1716:23:00sudo apt-get install openssh-server
+   39  2112/1716:23:00clear
+   40  2112/1716:23:00systemctl enable sshd
+   41  2112/1716:23:00sudo systemctl enable sshd
+   42  2112/1716:23:00systemctl enable foo.service
+   43  2112/1716:23:00clear
+   44  2112/1716:23:00reboot
+   45  2112/1716:23:00clear
+   46  2112/1716:23:00exit
+   47  2112/1716:23:00clear
+   48  2112/1716:23:00sshd 
+   49  2112/1716:23:00sudo systemctl enable sshd
+   50  2112/1716:23:00poweroff 
+   51  2112/1716:23:00ls
+   52  2112/1716:23:00ls /
+   53  2112/1716:23:00clear
+   54  2112/1716:23:00sudo apt-get update
+   55  2112/1716:23:00systemctl restart networking.service
+   56  2112/1716:23:00sudo systemctl restart networking.service
+   57  2112/1716:23:00ping www.google.es
+   58  2112/1716:23:00sudo apt-get update
+   59  2112/1716:23:00sudo apt-get upgrade 
+   60  2112/1716:23:00clear
+   61  2112/1716:23:00sudo apt-get install php7.0-xml php7.0-bcmath php7.0-mbstring 
+   62  2112/1716:23:00exit
+   63  2112/1716:23:00clear
+   64  2112/1716:23:00sudo apt-get install php7.0-xml php7.0-bcmath php7.0-mbstring 
+   65  2112/1716:23:00clear
+   66  2112/1716:23:00sudo wget http://repo.zabbix.com/zabbix/3.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_3.4-1+xenial_all.deb
+   67  2112/1716:23:00dpkg -i zabbix-release_3.4-1+xenial_all.deb 
+   68  2112/1716:23:00sudo dpkg -i zabbix-release_3.4-1+xenial_all.deb 
+   69  2112/1716:23:00sudo apt-get update
+   70  2112/1716:23:00clear
+   71  2112/1716:23:00sudo apt-get install zabbix-server-mysql zabbix-frontend-php zabbix-agent zabbix-get zabbix-sender snmp snmpd snmp-mibs-downloader php7.0-bcmath php7.0-xml php7.0-mbstring
+   72  2112/1716:23:00clear
+   73  2112/1716:23:00cd /etc/zabbix/
+   74  2112/1716:23:00sudo gedit apache.conf 
+   75  2112/1716:23:00cd
+   76  2112/1716:23:00clear
+   77  2112/1716:23:00cd /etc/zabbix/
+   78  2112/1716:23:00sudo vi apache.conf 
+   79  2112/1716:23:00clear
+   80  2112/1716:23:00vi /etc/php/7.0/apache2/php.ini 
+   81  2112/1716:23:00clear
+   82  2112/1716:23:00vi /etc/php/7.0/apache2/php.ini 
+   83  2112/1716:23:00cat /etc/php/7.0/apache2/php.ini | grep time
+   84  2112/1716:23:00cat /etc/php/7.0/apache2/php.ini | grep timezone
+   85  2112/1716:23:00vi /etc/php/7.0/apache2/php.ini 
+   86  2112/1716:23:00sudo vi /etc/php/7.0/apache2/php.ini 
+   87  2112/1716:23:00clear
+   88  2112/1716:23:00cat /etc/php/7.0/apache2/php.ini | grep timezone
+   89  2112/1716:23:00clear
+   90  2112/1716:23:00sudo systemctl reload apache2.service 
+   91  2112/1716:23:00clear
+   92  2112/1716:23:00sudo vi /etc/php/7.0/apache2/php.ini 
+   93  2112/1716:23:00clear
+   94  2112/1716:23:00cd
+   95  2112/1716:23:00clear
+   96  2112/1716:23:00sudo mysql -u root -p
+   97  2112/1716:23:00clear
+   98  2112/1716:23:00cd /usr/share/doc/zabbix-server-mysql/
+   99  2112/1716:23:00sudo zcat create.sql.gz | mysql -u root -p zabbixdb
+  100  2112/1716:23:00clear
+  101  2112/1716:23:00cd 
+  102  2112/1716:23:00clear
+  103  2112/1716:23:00cd /usr/share/doc/zabbix-server-mysql/
+  104  2112/1716:23:00zcat create.sql.gz | mysql -u zabbix
+  105  2112/1716:23:00cd ..
+  106  2112/1716:23:00clear
+  107  2112/1716:23:00cd
+  108  2112/1716:23:00clear
+  109  2112/1716:23:00cd /usr/share/doc/zabbix-server-mysql/
+  110  2112/1716:23:00sudo zcat create.sql.gz | mysql -u zabbix
+  111  2112/1716:23:00cd
+  112  2112/1716:23:00clear
+  113  2112/1716:23:00cd /usr/share/doc/zabbix-server-mysql/
+  114  2112/1716:23:00sudo zcat create.sql.gz | mysql -u zabbix -p
+  115  2112/1716:23:00sudo su
+  116  2112/1716:23:00clear
+  117  2112/1716:23:00cd
+  118  2112/1716:23:00clear
+  119  2112/1716:23:00cd /usr/share/doc/zabbix-server-mysql/
+  120  2112/1716:23:00zcat create.sql.gz | mysql -u zabbix -p
+  121  2112/1716:23:00gunzip create.sql.gz
+  122  2112/1716:23:00sudo su
+  123  2112/1716:23:00exit
+  124  2112/1716:23:00ifconfig
+  125  2112/1716:23:00ping
+  126  2112/1716:23:00ping 192.168.56.110
+  127  2112/1716:23:00reset
+  128  2112/1716:23:00ifconfig
+  129  2112/1716:23:00ls
+  130  2112/1716:23:00clear
+  131  2112/1716:23:00ls /
+  132  2112/1716:23:00ping www.google.es
+  133  2112/1716:23:00ifconfig 
+  134  2112/1716:23:00sudo systemctl restart networking.service 
+  135  2112/1716:23:00ifdown enp0s3
+  136  2112/1716:23:00sudo ifdown enp0s3
+  137  2112/1716:23:00sudo ifup enp0s3
+  138  2112/1716:23:00ping www.google.es
+  139  2112/1716:23:00clear
+  140  2112/1716:23:00poweroff 
+  141  2112/1716:23:00cleaer
+  142  2112/1716:23:00clear
+  143  2112/1716:23:00ifconfig
+  144  2112/1716:23:00ping www.google.es
+  145  2112/1716:23:00ifdown enp0s3 
+  146  2112/1716:23:00sudo ifdown enp0s3 
+  147  2112/1716:23:00ifup enp0s3
+  148  2112/1716:23:00sudo ifup enp0s3
+  149  2112/1716:23:00ping www.google.es
+  150  2112/1716:23:00sudo systemctl restart
+  151  2112/1716:23:00sudo systemctl restart networkw
+  152  2112/1716:23:00sudo systemctl restart networking.service 
+  153  2112/1716:23:00ping www.google.es
+  154  2112/1716:23:00clear
+  155  2112/1716:23:00reset
+  156  2112/1716:23:00sudo systemctl status zabbix-server.service 
+  157  2112/1716:23:00clear
+  158  2112/1716:23:00sudo systemctl status zabbix-agent.service 
+  159  2112/1716:23:00clear
+  160  2112/1716:23:00reset
+  161  2112/1716:23:00sudo systemctl status ssh
+  162  2112/1716:23:00sudo cat /etc/ssh/ssh_config 
+  163  2112/1716:23:00clear
+  164  2112/1716:23:00sudo more /etc/ssh/ssh_config 
+  165  2112/1716:23:00clear
+  166  2112/1716:23:00sudo more /etc/ssh/sshd_config 
+  167  2112/1716:23:00clear
+  168  2112/1716:23:00reset
+  169  2112/1716:23:00sudo systemctl status apache2.service 
+  170  2112/1716:23:00clear
+  171  2112/1716:23:00reset
+  172  2112/1716:23:00poweroff 
+  173  2112/1716:23:00ping 172.20.54.133
+  174  2112/1716:23:00clear
+  175  2112/1716:23:00sudo systemctl status apache2.service 
+  176  2112/1716:23:00clear
+  177  2112/1716:23:00ifconfig
+  178  2112/1716:23:00exit
+  179  2112/1716:23:00poweroff e
+  180  2112/1716:23:00poweroff 
+  181  2112/1716:23:00clear
+  182  2112/1716:23:00ping www.google.es
+  183  2112/1716:23:00ifconfig 
+  184  2112/1716:23:00ifdown enp0s8 
+  185  2112/1716:23:00sudo ifdown enp0s8 
+  186  2112/1716:23:00sudo ifup enp0s8
+  187  2112/1716:23:00ping www.google.es
+  188  2112/1716:23:00sudo systemctl restart network.service
+  189  2112/1716:23:00sudo systemctl restart networking.service 
+  190  2112/1716:23:00ping www.google.es
+  191  2112/1716:23:00ping 192.168.1.14
+  192  2112/1716:23:00clear
+  193  2112/1716:23:00ifconfig 
+  194  2112/1716:23:00poweroff 
+  195  2112/1716:23:01clear
+  196  2112/1716:23:05ssh
+  197  2112/1716:23:10sshd 
+  198  2112/1716:23:13clear
+  199  2112/1716:24:39export HISTTIMEFORMAT='%d%m/%y%T';history > Ubs.txt

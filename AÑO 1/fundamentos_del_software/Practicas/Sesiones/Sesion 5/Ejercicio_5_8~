@@ -1,0 +1,3 @@
+#!/bin/bash
+printf "0 es falso y 1 es verdadero\n"
+echo "El numero $1 es MAYOR que $2 = $[$1>$2]" 

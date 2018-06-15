@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>Planos y ASCII: Fichero Fuente include/pgm.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Planos y ASCII
+   &#160;<span id="projectnumber">1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">pgm.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="pgm_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _PGM_H_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define _PGM_H_</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522ed">   20</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522ed">TipoImagen</a> {</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda23c8d70e6eadf2d0d0ee1fd3bb293384">   21</a></span>&#160;  <a class="code" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda23c8d70e6eadf2d0d0ee1fd3bb293384">IMG_DESCONOCIDO</a>,  </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda724f6134dce25e3d82af96f9061dd9de">   22</a></span>&#160;  <a class="code" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda724f6134dce25e3d82af96f9061dd9de">IMG_PGM_BINARIO</a>,  </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda2535c521166366e04b5091ef8acfcbde">   23</a></span>&#160;  <a class="code" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda2535c521166366e04b5091ef8acfcbde">IMG_PGM_TEXTO</a>     </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="pgm_8h.html#a8914f6544a484741b05c092d9e7522ed">TipoImagen</a> <a class="code" href="pgm_8h.html#a85c7f15bdcdee461eba76965aaccb910">infoPGM</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keywordtype">int</span>&amp; filas, <span class="keywordtype">int</span>&amp; columnas);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="pgm_8h.html#a3d11aef73fef65e3ba31446f8fc20595">leerPGMBinario</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> datos[], <span class="keywordtype">int</span>&amp; filas, <span class="keywordtype">int</span>&amp; columnas);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="pgm_8h.html#a381cd69ce2e9de0b0e3b12131a397121">escribirPGMBinario</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> datos[], <span class="keywordtype">int</span> filas, <span class="keywordtype">int</span> columnas);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="pgm_8h.html#ad0376e7bb607f570d680118ef291ee3d">leerPGMTexto</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> datos[], <span class="keywordtype">int</span>&amp; filas, <span class="keywordtype">int</span>&amp; columnas);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="pgm_8h.html#a0ecaed351740580902d90a4c496a0e3b">escribirPGMTexto</a> (<span class="keyword">const</span> <span class="keywordtype">char</span> nombre[], <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> datos[], <span class="keywordtype">int</span> filas, <span class="keywordtype">int</span> columnas);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="pgm_8h_html_a8914f6544a484741b05c092d9e7522eda23c8d70e6eadf2d0d0ee1fd3bb293384"><div class="ttname"><a href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda23c8d70e6eadf2d0d0ee1fd3bb293384">IMG_DESCONOCIDO</a></div><div class="ttdoc">Tipo de imagen desconocido. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8h_source.html#l00021">pgm.h:21</a></div></div>
+<div class="ttc" id="pgm_8h_html_a0ecaed351740580902d90a4c496a0e3b"><div class="ttname"><a href="pgm_8h.html#a0ecaed351740580902d90a4c496a0e3b">escribirPGMTexto</a></div><div class="ttdeci">bool escribirPGMTexto(const char nombre[], const unsigned char datos[], int filas, int columnas)</div><div class="ttdoc">Escribe una imagen de tipo PGM texto. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8cpp_source.html#l00134">pgm.cpp:134</a></div></div>
+<div class="ttc" id="pgm_8h_html_ad0376e7bb607f570d680118ef291ee3d"><div class="ttname"><a href="pgm_8h.html#ad0376e7bb607f570d680118ef291ee3d">leerPGMTexto</a></div><div class="ttdeci">bool leerPGMTexto(const char nombre[], unsigned char datos[], int &amp;filas, int &amp;columnas)</div><div class="ttdoc">Lee una imagen de tipo PGM texto. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8cpp_source.html#l00114">pgm.cpp:114</a></div></div>
+<div class="ttc" id="pgm_8h_html_a8914f6544a484741b05c092d9e7522eda724f6134dce25e3d82af96f9061dd9de"><div class="ttname"><a href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda724f6134dce25e3d82af96f9061dd9de">IMG_PGM_BINARIO</a></div><div class="ttdoc">Imagen tipo PGM Binario. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8h_source.html#l00022">pgm.h:22</a></div></div>
+<div class="ttc" id="pgm_8h_html_a3d11aef73fef65e3ba31446f8fc20595"><div class="ttname"><a href="pgm_8h.html#a3d11aef73fef65e3ba31446f8fc20595">leerPGMBinario</a></div><div class="ttdeci">bool leerPGMBinario(const char nombre[], unsigned char datos[], int &amp;filas, int &amp;columnas)</div><div class="ttdoc">Lee una imagen de tipo PGM binario. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8cpp_source.html#l00082">pgm.cpp:82</a></div></div>
+<div class="ttc" id="pgm_8h_html_a8914f6544a484741b05c092d9e7522ed"><div class="ttname"><a href="pgm_8h.html#a8914f6544a484741b05c092d9e7522ed">TipoImagen</a></div><div class="ttdeci">TipoImagen</div><div class="ttdoc">Tipo de imagen. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8h_source.html#l00020">pgm.h:20</a></div></div>
+<div class="ttc" id="pgm_8h_html_a8914f6544a484741b05c092d9e7522eda2535c521166366e04b5091ef8acfcbde"><div class="ttname"><a href="pgm_8h.html#a8914f6544a484741b05c092d9e7522eda2535c521166366e04b5091ef8acfcbde">IMG_PGM_TEXTO</a></div><div class="ttdoc">Imagen tipo PGM Texto. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8h_source.html#l00023">pgm.h:23</a></div></div>
+<div class="ttc" id="pgm_8h_html_a85c7f15bdcdee461eba76965aaccb910"><div class="ttname"><a href="pgm_8h.html#a85c7f15bdcdee461eba76965aaccb910">infoPGM</a></div><div class="ttdeci">TipoImagen infoPGM(const char nombre[], int &amp;filas, int &amp;columnas)</div><div class="ttdoc">Consulta el tipo de imagen del archivo y sus dimensiones. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8cpp_source.html#l00065">pgm.cpp:65</a></div></div>
+<div class="ttc" id="pgm_8h_html_a381cd69ce2e9de0b0e3b12131a397121"><div class="ttname"><a href="pgm_8h.html#a381cd69ce2e9de0b0e3b12131a397121">escribirPGMBinario</a></div><div class="ttdeci">bool escribirPGMBinario(const char nombre[], const unsigned char datos[], int filas, int columnas)</div><div class="ttdoc">Escribe una imagen de tipo PGM binario. </div><div class="ttdef"><b>Definition:</b> <a href="pgm_8cpp_source.html#l00099">pgm.cpp:99</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado el Viernes, 3 de Junio de 2016 20:36:29 para Planos y ASCII por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.7
+</small></address>
+</body>
+</html>

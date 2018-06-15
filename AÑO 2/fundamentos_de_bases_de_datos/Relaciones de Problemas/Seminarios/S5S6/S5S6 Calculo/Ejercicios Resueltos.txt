@@ -1,0 +1,43 @@
+s:=proveedor;
+p:=pieza;
+j:=proyecto;
+spj:=ventas;
+
+p1={SPJ.codpro | spj(SPJ) and SPJ.codpj='J1'};
+
+p2:={V | spj(V) and V.cantidad>100};
+
+p3:={S.nompro,J.nompj, P.nompie | s(S) and j(J) and p(P) and S.ciudad=J.ciudad and J.ciudad=P.ciudad};
+
+p4:={P.nompie | p(P) and (exists V)(spj(V) and V.codpie=P.codpie and (exists S)(s(S) and S.codpro=V.codpro and S.ciudad ='Londres'))};
+
+p5:={S.ciudad,J.ciudad | s(S) and j(J) and (exists V)(spj(V) and S.codpro=V.codpro and J.codpj=V.codpj)};
+
+p6:={V.codpie | spj(V) and (exists S,J)(s(S) and j(J) and S.codpro=V.codpro and J.codpj=V.codpj and S.ciudad=J.ciudad)};
+
+p7:={J.codpj | j(J) and (exists V,S)(spj(V) and s(S) and V.codpj=J.codpj and S.codpro=V.codpro and J.ciudad <> S.ciudad)};
+
+ciudadPieza:={P.ciudad | p(P)};
+ciudadProyecto:={J.ciudad | j(J)};
+p8:={C | ciudadPieza(C) or ciudadProyecto(C)};
+
+ciudadProveedor:={S.ciudad | s(S)};
+p9:={C | ciudadProveedor(C) and not ciudadPieza(C)};
+
+p10:={C | ciudadProveedor(C) and ciudadPieza(C)};
+
+p11:={V.codpj | spj(V) and (exists V2)(spj(V2) and V2.codpro='S1' and V2.codpie=V.codpie)};
+
+p12:={V.cantidad | spj(V) and not (exists V2)(spj(V2) and V2.cantidad < V.cantidad)};
+
+p13:={J.codpj | j(J) and not(exists S,P,V) (s(S) and p(P) and spj(V) and P.color='Rojo' and S.ciudad='Londres' and S.codpro=V.codpro and P.codpie=V.codpie and V.codpj=J.codpj)};
+
+p14:={V.codpj | spj(V) and V.codpro='S1' and not (exists V2)(spj(V2) and V2.codpj=V.codpj and V2.codpro <> 'S1')};
+
+p15:={P.codpie | p(P) and not (exists J)(j(J) and J.ciudad='Paris' and not (exists V)(spj(V) and J.codpj=V.codpj and P.codpie=V.codpie))};
+
+p16:={V.codpro,V.codpie | spj(V) and not (exists J) (j(J) and not (exists V2)(spj(V2) and V2.codpro=V.codpro and V2.codpie=V.codpie and V2.codpj=J.codpj))};
+
+p17:={V.codpj | ventas(V) and v.codpro='S1' and not (exists P) (pieza(P) and not (exists V2) (ventas(V2) and V2.codpie=P.codpie and V.codpj=V2.codpj))};
+
+p18:={S.codpro | proveedor(S) and not (exists P,PJ,V) (pieza(P) and proyecto(PJ) and ventas(V) and V.codpro=S.codpro and V.codpie=P.codpie and V.codpj=PJ.codpj)};

@@ -1,0 +1,80 @@
+Productor 1 produce valor 0
+Productor 2 produce valor 0
+Productor 3 produce valor 0
+Productor 4 produce valor 0
+Productor 0 produce valor 0
+Productor 3 produce valor 1
+Buffer recibe 0 de Productor 3
+Buffer recibe 0 de Productor 2
+Productor 2 produce valor 1
+Consumidor 7 recibe valor 0 de Buffer 
+Consumidor 9 recibe valor 0 de Buffer 
+Productor 4 produce valor 1
+Buffer envía 0 a Consumidor 7
+Buffer envía 0 a Consumidor 9
+Buffer recibe 0 de Productor 0
+Buffer recibe 0 de Productor 4
+Productor 0 produce valor 1
+Buffer envía 0 a Consumidor 8
+Buffer recibe 0 de Productor 1
+Productor 1 produce valor 1
+Consumidor 6 recibe valor 0 de Buffer 
+Buffer envía 0 a Consumidor 6
+Consumidor 8 recibe valor 0 de Buffer 
+Productor 3 produce valor 2
+Buffer recibe 1 de Productor 3
+Productor 2 produce valor 2
+Buffer recibe 1 de Productor 2
+Buffer recibe 1 de Productor 4
+Productor 4 produce valor 2
+Buffer recibe 1 de Productor 0
+Productor 0 produce valor 2
+Consumidor 7 recibe valor 1 de Buffer 
+Buffer envía 1 a Consumidor 7
+Buffer recibe 1 de Productor 1
+Productor 1 produce valor 2
+Consumidor 9 recibe valor 1 de Buffer 
+Buffer envía 1 a Consumidor 9
+Buffer envía 1 a Consumidor 6
+Consumidor 6 recibe valor 1 de Buffer 
+Buffer envía 1 a Consumidor 8
+Consumidor 8 recibe valor 1 de Buffer 
+Buffer recibe 2 de Productor 3
+Productor 3 produce valor 3
+Productor 2 produce valor 3
+Buffer recibe 2 de Productor 2
+Buffer recibe 2 de Productor 4
+Productor 4 produce valor 3
+Buffer envía 2 a Consumidor 7
+Buffer recibe 2 de Productor 0
+Consumidor 7 recibe valor 2 de Buffer 
+Productor 0 produce valor 3
+Buffer envía 2 a Consumidor 9
+Consumidor 9 recibe valor 2 de Buffer 
+Buffer envía 2 a Consumidor 6
+Consumidor 6 recibe valor 2 de Buffer 
+Consumidor 8 recibe valor 2 de Buffer 
+Buffer envía 2 a Consumidor 8
+Buffer recibe 2 de Productor 1
+Productor 1 produce valor 3
+Buffer envía 2 a Consumidor 7
+Consumidor 7 recibe valor 2 de Buffer 
+Buffer envía 1 a Consumidor 9
+Consumidor 9 recibe valor 1 de Buffer 
+Consumidor 6 recibe valor 0 de Buffer 
+Buffer envía 0 a Consumidor 6
+Buffer recibe 3 de Productor 3
+Buffer envía 3 a Consumidor 8
+Consumidor 8 recibe valor 3 de Buffer 
+Buffer recibe 3 de Productor 2
+Buffer recibe 3 de Productor 4
+Buffer recibe 3 de Productor 0
+Buffer recibe 3 de Productor 1
+Consumidor 7 recibe valor 3 de Buffer 
+Buffer envía 3 a Consumidor 7
+Buffer envía 3 a Consumidor 9
+Consumidor 9 recibe valor 3 de Buffer 
+Buffer envía 3 a Consumidor 6
+Consumidor 6 recibe valor 3 de Buffer 
+Consumidor 8 recibe valor 3 de Buffer 
+Buffer envía 3 a Consumidor 8

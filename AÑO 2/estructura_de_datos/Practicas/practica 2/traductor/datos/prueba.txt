@@ -1,0 +1,6 @@
+hola;que tal
+adios;muy buenas
+hola;que pasa
+adios;que ocurre
+adios;muy buenas
+pepe;su padre

@@ -1,0 +1,60 @@
+
+
+Para chunk: 1
+ thread 0 suma a[4]=4 suma=4 
+ thread 0 suma a[5]=5 suma=9 
+ thread 0 suma a[6]=6 suma=15 
+ thread 0 suma a[10]=10 suma=25 
+ thread 0 suma a[11]=11 suma=36 
+ thread 0 suma a[12]=12 suma=48 
+ thread 0 suma a[13]=13 suma=61 
+ thread 0 suma a[14]=14 suma=75 
+ thread 0 suma a[15]=15 suma=90 
+ thread 3 suma a[0]=0 suma=0 
+ thread 3 suma a[1]=1 suma=1 
+ thread 3 suma a[2]=2 suma=3 
+ thread 3 suma a[3]=3 suma=6 
+ thread 1 suma a[7]=7 suma=7 
+ thread 1 suma a[8]=8 suma=15 
+ thread 1 suma a[9]=9 suma=24 
+Fuera de 'parallel for' suma=90
+
+
+Para chunk: 2
+ thread 3 suma a[0]=0 suma=0 
+ thread 3 suma a[1]=1 suma=1 
+ thread 3 suma a[2]=2 suma=3 
+ thread 3 suma a[3]=3 suma=6 
+ thread 2 suma a[4]=4 suma=4 
+ thread 0 suma a[12]=12 suma=12 
+ thread 0 suma a[13]=13 suma=25 
+ thread 0 suma a[14]=14 suma=39 
+ thread 0 suma a[15]=15 suma=54 
+ thread 3 suma a[10]=10 suma=16 
+ thread 3 suma a[11]=11 suma=27 
+ thread 1 suma a[7]=7 suma=7 
+ thread 1 suma a[8]=8 suma=15 
+ thread 1 suma a[9]=9 suma=24 
+ thread 2 suma a[5]=5 suma=9 
+ thread 2 suma a[6]=6 suma=15 
+Fuera de 'parallel for' suma=54
+
+
+Para chunk: 4
+ thread 2 suma a[8]=8 suma=8 
+ thread 2 suma a[9]=9 suma=17 
+ thread 2 suma a[10]=10 suma=27 
+ thread 2 suma a[11]=11 suma=38 
+ thread 1 suma a[0]=0 suma=0 
+ thread 1 suma a[1]=1 suma=1 
+ thread 1 suma a[2]=2 suma=3 
+ thread 1 suma a[3]=3 suma=6 
+ thread 3 suma a[4]=4 suma=4 
+ thread 3 suma a[5]=5 suma=9 
+ thread 3 suma a[6]=6 suma=15 
+ thread 3 suma a[7]=7 suma=22 
+ thread 0 suma a[12]=12 suma=12 
+ thread 0 suma a[13]=13 suma=25 
+ thread 0 suma a[14]=14 suma=39 
+ thread 0 suma a[15]=15 suma=54 
+Fuera de 'parallel for' suma=54

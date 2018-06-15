@@ -1,0 +1,133 @@
+\hypertarget{class_frase_adivina}{}\section{Frase\+Adivina Class Reference}
+\label{class_frase_adivina}\index{Frase\+Adivina@{Frase\+Adivina}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_frase_adivina_ae8c205f4adc1058a2fee416550808884}{Frase\+Adivina} (const std\+::string \&s)
+\begin{DoxyCompactList}\small\item\em Constructor de una frase para adivinar. \end{DoxyCompactList}\item 
+void \hyperlink{class_frase_adivina_a23aa7d6880ad9223198fb2aab163bbd6}{set\+Visible} (int perc)
+\begin{DoxyCompactList}\small\item\em Hace visible un porcentaje de letras de la frase a adivinar. \end{DoxyCompactList}\item 
+int \hyperlink{class_frase_adivina_a2f1fce08585d1e26192e48d6fea965e7}{esta\+Y\+Actualiza} (char c)
+\begin{DoxyCompactList}\small\item\em Busca una letra en la frase y si la encuentra la pone visible. \end{DoxyCompactList}\item 
+bool \hyperlink{class_frase_adivina_a63b6feb0e8ea8b3783ac9f607c9d98af}{es\+Igual} (const std\+::string \&s)
+\begin{DoxyCompactList}\small\item\em Comprueba si la cadena introducida es la frase a adivinar. \end{DoxyCompactList}\item 
+bool \hyperlink{class_frase_adivina_ac1738127e0d5b240152c67ba3aadf763}{adivinada} ()
+\begin{DoxyCompactList}\small\item\em Comprueba si se ha adivinado la frase. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{class_frase_adivina_abbefd724cae153a9b51dcdefb5ffa29b}{operator$<$$<$} (std\+::ostream \&os, \hyperlink{class_frase_adivina}{Frase\+Adivina} \&f)
+\begin{DoxyCompactList}\small\item\em Sobrecargar del operador $<$$<$ para mostrar una frase con sus letras visibles y ocultas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Frase\+Adivina@{Frase\+Adivina}!Frase\+Adivina@{Frase\+Adivina}}
+\index{Frase\+Adivina@{Frase\+Adivina}!Frase\+Adivina@{Frase\+Adivina}}
+\subsubsection[{\texorpdfstring{Frase\+Adivina(const std\+::string \&s)}{FraseAdivina(const std::string &s)}}]{\setlength{\rightskip}{0pt plus 5cm}Frase\+Adivina\+::\+Frase\+Adivina (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{class_frase_adivina_ae8c205f4adc1058a2fee416550808884}{}\label{class_frase_adivina_ae8c205f4adc1058a2fee416550808884}
+
+
+Constructor de una frase para adivinar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & frase original \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Frase\+Adivina@{Frase\+Adivina}!adivinada@{adivinada}}
+\index{adivinada@{adivinada}!Frase\+Adivina@{Frase\+Adivina}}
+\subsubsection[{\texorpdfstring{adivinada()}{adivinada()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Frase\+Adivina\+::adivinada (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_frase_adivina_ac1738127e0d5b240152c67ba3aadf763}{}\label{class_frase_adivina_ac1738127e0d5b240152c67ba3aadf763}
+
+
+Comprueba si se ha adivinado la frase. 
+
+\begin{DoxyReturn}{Returns}
+True si se ha adivinado la frase, false en caso contrario 
+\end{DoxyReturn}
+\index{Frase\+Adivina@{Frase\+Adivina}!es\+Igual@{es\+Igual}}
+\index{es\+Igual@{es\+Igual}!Frase\+Adivina@{Frase\+Adivina}}
+\subsubsection[{\texorpdfstring{es\+Igual(const std\+::string \&s)}{esIgual(const std::string &s)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Frase\+Adivina\+::es\+Igual (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{class_frase_adivina_a63b6feb0e8ea8b3783ac9f607c9d98af}{}\label{class_frase_adivina_a63b6feb0e8ea8b3783ac9f607c9d98af}
+
+
+Comprueba si la cadena introducida es la frase a adivinar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & Cadena a comparar con la original \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True si la cadena es igual que la original, false en caso contrario 
+\end{DoxyReturn}
+\index{Frase\+Adivina@{Frase\+Adivina}!esta\+Y\+Actualiza@{esta\+Y\+Actualiza}}
+\index{esta\+Y\+Actualiza@{esta\+Y\+Actualiza}!Frase\+Adivina@{Frase\+Adivina}}
+\subsubsection[{\texorpdfstring{esta\+Y\+Actualiza(char c)}{estaYActualiza(char c)}}]{\setlength{\rightskip}{0pt plus 5cm}int Frase\+Adivina\+::esta\+Y\+Actualiza (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_frase_adivina_a2f1fce08585d1e26192e48d6fea965e7}{}\label{class_frase_adivina_a2f1fce08585d1e26192e48d6fea965e7}
+
+
+Busca una letra en la frase y si la encuentra la pone visible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & Letra a buscar en la frase para hacer visible \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el numero de letras actualizadas a visibles 
+\end{DoxyReturn}
+\index{Frase\+Adivina@{Frase\+Adivina}!set\+Visible@{set\+Visible}}
+\index{set\+Visible@{set\+Visible}!Frase\+Adivina@{Frase\+Adivina}}
+\subsubsection[{\texorpdfstring{set\+Visible(int perc)}{setVisible(int perc)}}]{\setlength{\rightskip}{0pt plus 5cm}void Frase\+Adivina\+::set\+Visible (
+\begin{DoxyParamCaption}
+\item[{int}]{perc}
+\end{DoxyParamCaption}
+)}\hypertarget{class_frase_adivina_a23aa7d6880ad9223198fb2aab163bbd6}{}\label{class_frase_adivina_a23aa7d6880ad9223198fb2aab163bbd6}
+
+
+Hace visible un porcentaje de letras de la frase a adivinar. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em perc} & Porcentaje de letras a poner visibles \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Frase\+Adivina@{Frase\+Adivina}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Frase\+Adivina@{Frase\+Adivina}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{{\bf Frase\+Adivina} \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_frase_adivina_abbefd724cae153a9b51dcdefb5ffa29b}{}\label{class_frase_adivina_abbefd724cae153a9b51dcdefb5ffa29b}
+
+
+Sobrecargar del operador $<$$<$ para mostrar una frase con sus letras visibles y ocultas. 
+
+\begin{DoxyReturn}{Returns}
+Duvuelve el flujo de salida 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/frase\+\_\+adivina.\+h\end{DoxyCompactItemize}

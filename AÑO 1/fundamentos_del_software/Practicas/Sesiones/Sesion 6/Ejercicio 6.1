@@ -1,0 +1,26 @@
+#!/bin/bash
+
+if [ $# -eq 2 ]; then
+	if test -d $1; then
+		#Compruebo si el 2º parametro es un numero entero mediante la variable result
+		result=`expr $2 + 1 2>/dev/null`
+		# -z indica si la variable es nula
+		if [ -z $result ]; then
+			echo "$2 no es un numero entero"
+		else
+			#num lo utilizo para enumerar los ficheros
+			num=1
+			#maxdepth indica el limite de directorios hijos a los que entrar
+			for archivo in $(find $1 -maxdepth 1 -type f -size -$2)
+			do 
+				echo "$num $archivo" >> archivosSizN.txt 
+				let num=$num+1
+			done
+		fi
+	else
+		echo "$1 no es un directorio existente"	
+	fi
+else
+	echo "Introduce los parametros correctos"
+
+fi

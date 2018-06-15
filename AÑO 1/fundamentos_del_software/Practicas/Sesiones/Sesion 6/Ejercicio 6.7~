@@ -1,0 +1,24 @@
+#!/bin/bash
+clear
+tipo=
+while [ -z $tipo ]
+do
+	read -p "Introduce el tipo de shell a buscar: " tipo
+	while [ ! -f /bin/$tipo ]
+	do
+		clear
+		echo "El tipo de bash introducido no existe!!"
+		read -p "Introduce el tipo de shell a buscar: " tipo
+	done
+done
+cut -d: -f1,7 /etc/passwd > temp_user
+grep \/bin\/$tipo temp_user | cut -d: -f1 | sort > temp_user
+wc -l temp_user > num_lineas
+clear
+if grep 0 num_lineas >/dev/null ; then
+	echo "No existen usuarios que utilicen ese tipo de shell"
+else
+	echo -e "Estos son los usuarios que utilizan $tipo: \n"
+	cat temp_user
+fi
+rm temp_user num_lineas

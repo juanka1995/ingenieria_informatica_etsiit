@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ $# == 2 ]; then
+
+	if test -f $1 ; then
+		printf "El archivo $1 existe\n"
+	elif test -d ./$2 ; then
+		printf "El archivo $1 no existe\n"
+		printf "El directorio $2 si existe.\n"
+	else
+		printf "El directorio $2 no existe.\n"
+	fi 
+
+else
+
+	printf "No has introducido la cantidad de parametros correctos\n";
+
+fi

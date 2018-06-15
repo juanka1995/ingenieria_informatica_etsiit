@@ -1,0 +1,104 @@
+\BOOKMARK [1][-]{section.1}{Descripci\363n}{}% 1
+\BOOKMARK [1][-]{section.2}{Requisitos Funcionales}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{RF1. Registro de usuario:}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{RF2. Editar datos personales:}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{RF3. Solicitud asignar nutricionista:}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{RF4. Eliminar usuario:}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{RF5. Crear nueva dieta:}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{RF6. Mostrar recetas que componen una dieta:}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.7}{RF8. Eliminar dieta existente:}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.8}{RF9. Crear nueva receta.}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.9}{RF10. Asignar receta a dieta \(nutricionista\).}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.10}{RF11. Buscar receta. \(usuario/nutricionista\).}{section.2}% 12
+\BOOKMARK [2][-]{subsection.2.11}{RF12. Marcar receta como favorito \(usuario\).}{section.2}% 13
+\BOOKMARK [2][-]{subsection.2.12}{RF13. A\361adir nuevo ingrediente.}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.13}{RF14. Buscar ingrediente por nombre.}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.14}{RF15. Asignar ingrediente a receta.}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.15}{RF16. Eliminar ingrediente.}{section.2}% 17
+\BOOKMARK [1][-]{section.3}{Requisitos de datos}{}% 18
+\BOOKMARK [2][-]{subsection.3.1}{RD1: Datos personales del usuario para su alta,}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.2}{RD2: Usuario del sistema,}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.3}{RD3: Solicitud de editar informaci\363n personal,}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.4}{RD4: Devolver identificador receta,}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.5}{RD6: Tiene nutricionista asignado,}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.6}{RD7: Confirmaci\363n nutricionista asignado,}{section.3}% 24
+\BOOKMARK [2][-]{subsection.3.7}{RD8: Lista de nutricionistas disponibles,}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.8}{RD9: Datos de la dieta,}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.9}{RD10: Datos de una dieta,}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.10}{RD11: Identificador de dieta,}{section.3}% 28
+\BOOKMARK [2][-]{subsection.3.11}{RD12: Replanificaci\363n de la dieta,}{section.3}% 29
+\BOOKMARK [2][-]{subsection.3.12}{RD13: Eliminaci\363n de la dieta,}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.13}{RD14: Devolver datos de una receta,}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.14}{RD15: Ingrediente a\361adido a receta,}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.15}{RD16. Asignaci\363n de receta a dieta,}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.16}{RD17. Marcar como favorito,}{section.3}% 34
+\BOOKMARK [2][-]{subsection.3.17}{RD18. Datos de un ingrediente,}{section.3}% 35
+\BOOKMARK [2][-]{subsection.3.18}{RD19. Nombre del ingrediente,}{section.3}% 36
+\BOOKMARK [2][-]{subsection.3.19}{RD20. Ingrediente a buscar por nombre introducido por el nutricionista con: }{section.3}% 37
+\BOOKMARK [2][-]{subsection.3.20}{RD21: Datos de una receta,}{section.3}% 38
+\BOOKMARK [2][-]{subsection.3.21}{RD22: Identificador de dieta,}{section.3}% 39
+\BOOKMARK [2][-]{subsection.3.22}{RD23. Datos de un ingrediente,}{section.3}% 40
+\BOOKMARK [2][-]{subsection.3.23}{RD24: Asignaci\363n de ingredientes a recetas,}{section.3}% 41
+\BOOKMARK [2][-]{subsection.3.24}{RD25: Identificador receta,}{section.3}% 42
+\BOOKMARK [2][-]{subsection.3.25}{RD26: Datos de una receta,}{section.3}% 43
+\BOOKMARK [2][-]{subsection.3.26}{RD27. Datos de un ingrediente,}{section.3}% 44
+\BOOKMARK [2][-]{subsection.3.27}{RD28. Datos de una receta favorita,}{section.3}% 45
+\BOOKMARK [1][-]{section.4}{Requisitos sem\341nticos}{}% 46
+\BOOKMARK [2][-]{subsection.4.1}{RS1:}{section.4}% 47
+\BOOKMARK [2][-]{subsection.4.2}{RS2:}{section.4}% 48
+\BOOKMARK [2][-]{subsection.4.3}{RS3:}{section.4}% 49
+\BOOKMARK [2][-]{subsection.4.4}{RS4}{section.4}% 50
+\BOOKMARK [2][-]{subsection.4.5}{RS5:}{section.4}% 51
+\BOOKMARK [2][-]{subsection.4.6}{RS6:}{section.4}% 52
+\BOOKMARK [2][-]{subsection.4.7}{RS7:}{section.4}% 53
+\BOOKMARK [2][-]{subsection.4.8}{RS8:}{section.4}% 54
+\BOOKMARK [2][-]{subsection.4.9}{RS9:}{section.4}% 55
+\BOOKMARK [2][-]{subsection.4.10}{RS10:}{section.4}% 56
+\BOOKMARK [2][-]{subsection.4.11}{RS11:}{section.4}% 57
+\BOOKMARK [2][-]{subsection.4.12}{RS12:}{section.4}% 58
+\BOOKMARK [2][-]{subsection.4.13}{RS13:}{section.4}% 59
+\BOOKMARK [1][-]{section.5}{Diagramas}{}% 60
+\BOOKMARK [2][-]{subsection.5.1}{Diagrama de usuarios. Juan Carlos Ruiz Garc\355a}{section.5}% 61
+\BOOKMARK [2][-]{subsection.5.2}{Refinamiento 1}{section.5}% 62
+\BOOKMARK [2][-]{subsection.5.3}{Refinamiento 2}{section.5}% 63
+\BOOKMARK [2][-]{subsection.5.4}{Diagramas de dietas. Guillermo Bueno Vargas}{section.5}% 64
+\BOOKMARK [2][-]{subsection.5.5}{Refinamiento 1}{section.5}% 65
+\BOOKMARK [2][-]{subsection.5.6}{Refinamiento 2}{section.5}% 66
+\BOOKMARK [2][-]{subsection.5.7}{Diagramas de recetas. Juan Luis S\341nchez}{section.5}% 67
+\BOOKMARK [2][-]{subsection.5.8}{Refinamiento 1}{section.5}% 68
+\BOOKMARK [2][-]{subsection.5.9}{Refinamiento 2}{section.5}% 69
+\BOOKMARK [2][-]{subsection.5.10}{Diagramas de ingredientes. Arturo Cort\351s S\341nchez}{section.5}% 70
+\BOOKMARK [2][-]{subsection.5.11}{Refinamiento 1}{section.5}% 71
+\BOOKMARK [2][-]{subsection.5.12}{Refinamiento 2}{section.5}% 72
+\BOOKMARK [2][-]{subsection.5.13}{Diagramas general}{section.5}% 73
+\BOOKMARK [2][-]{subsection.5.14}{Refinamiento 1}{section.5}% 74
+\BOOKMARK [2][-]{subsection.5.15}{Refinamiento 2}{section.5}% 75
+\BOOKMARK [1][-]{section.6}{Diagrama Entidad-Relaci\363n}{}% 76
+\BOOKMARK [1][-]{section.7}{Diagrama Externos}{}% 77
+\BOOKMARK [2][-]{subsection.7.1}{Refinamiento 0}{section.7}% 78
+\BOOKMARK [2][-]{subsection.7.2}{Refinamiento 1}{section.7}% 79
+\BOOKMARK [2][-]{subsection.7.3}{Refinamiento 2}{section.7}% 80
+\BOOKMARK [1][-]{section.8}{Operaciones CRUD}{}% 81
+\BOOKMARK [2][-]{subsection.8.1}{Operaci\363n de Crear\(Create\)}{section.8}% 82
+\BOOKMARK [2][-]{subsection.8.2}{Operaci\363n de Consutar\(Request\)}{section.8}% 83
+\BOOKMARK [2][-]{subsection.8.3}{Operaci\363n de Actualizar\(Update\)}{section.8}% 84
+\BOOKMARK [2][-]{subsection.8.4}{Operaci\363n de Eliminar\(Delete\)}{section.8}% 85
+\BOOKMARK [1][-]{section.9}{Paso a tabla del E/R}{}% 86
+\BOOKMARK [1][-]{section.10}{Implementaci\363n}{}% 87
+\BOOKMARK [1][-]{section.11}{Sentencias SQL}{}% 88
+\BOOKMARK [2][-]{subsection.11.1}{Asignar}{section.11}% 89
+\BOOKMARK [2][-]{subsection.11.2}{Compuesta}{section.11}% 90
+\BOOKMARK [2][-]{subsection.11.3}{Dieta}{section.11}% 91
+\BOOKMARK [2][-]{subsection.11.4}{Favorito}{section.11}% 92
+\BOOKMARK [2][-]{subsection.11.5}{Usuario}{section.11}% 93
+\BOOKMARK [2][-]{subsection.11.6}{Gestiona}{section.11}% 94
+\BOOKMARK [2][-]{subsection.11.7}{Ingrediente}{section.11}% 95
+\BOOKMARK [2][-]{subsection.11.8}{Manipula}{section.11}% 96
+\BOOKMARK [2][-]{subsection.11.9}{Nutricionista}{section.11}% 97
+\BOOKMARK [2][-]{subsection.11.10}{Realiza}{section.11}% 98
+\BOOKMARK [2][-]{subsection.11.11}{Receta}{section.11}% 99
+\BOOKMARK [2][-]{subsection.11.12}{Usuario}{section.11}% 100
+\BOOKMARK [1][-]{section.12}{Inserciones SQL}{}% 101
+\BOOKMARK [2][-]{subsection.12.1}{Recetas}{section.12}% 102
+\BOOKMARK [2][-]{subsection.12.2}{Ingredientes}{section.12}% 103
+\BOOKMARK [2][-]{subsection.12.3}{Compuesta}{section.12}% 104

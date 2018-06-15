@@ -1,0 +1,25 @@
+TAMAÑO 950:
+
+Nº hebras: 1
+
+Tiempo empleado: 3.843261609
+Primer elemento resultado: 18104
+Ultimo elemento resultado: 19936
+
+Nº hebras: 2
+
+Tiempo empleado: 2.079071824
+Primer elemento resultado: 19020
+Ultimo elemento resultado: 18957
+
+Nº hebras: 3
+
+Tiempo empleado: 2.242754834
+Primer elemento resultado: 17971
+Ultimo elemento resultado: 18984
+
+Nº hebras: 4
+
+Tiempo empleado: 2.490022734
+Primer elemento resultado: 18607
+Ultimo elemento resultado: 18860

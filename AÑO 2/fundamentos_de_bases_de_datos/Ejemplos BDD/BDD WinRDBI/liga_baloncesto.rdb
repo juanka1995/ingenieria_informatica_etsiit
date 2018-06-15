@@ -1,0 +1,104 @@
+@equipos(codE/char,nombreE/char,localidad/char,entrenador/char,fecha_crea/char):codE
+'RMA',	'Real Madrid',	'Madrid',	'Pablo Laso',	'13/05/31'
+'FCB',	'Barcelona Regal',	'Barcelona',	'Xavi Pascual',	'24/08/26'
+'UNI',	'Unicaja',	'Malaga',	'Luis Casimiro',	'05/10/77'
+'VAL',	'Valencia',	'Valencia Basket',	'Velimir Perasovic',	'04/03/86'
+'CAL',	'Caja Laboral',	'Vitoria',	'Dusko Ivanovic',	'24/11/59'
+'REG',	'Regal FC Barcelona',	'Barcelona',	'Xavier Pascual',	'24/08/26'
+'BIZ',	'Bizkaia Bilbao Basket',	'Bilbao',	'Fotis Katsikaris',	'01/01/00'
+'BLR',	'Blancos de Rueda Valladolid',	'Valladolid',	'Luis Casimiro',	'01/01/76'
+'VLB',	'Valencia Basket',	'Valencia',	'Pacos Olmos',	'01/01/86'
+
+@jugadores(codJ/char,codE/char,nombreJ/char):codJ
+'A1',	'CAL',	'Pau Ribas'
+'A2',	'CAL',	'F. San Emeterio'
+'A3',	'CAL',	'Unai Calbarro'
+'A4',	'CAL',	'Andres Nocioni'
+'A5',	'CAL',	'Pablo Prigioni'
+'B1',	'RMA',	'Carlos Suarez'
+'B2',	'RMA',	'Felipe Reyes'
+'B3',	'RMA',	'Sergio Rodriguez'
+'B4',	'RMA',	'Sergio Llull'
+'B5',	'RMA',	'Ante Tomic'
+'C1',	'FCB',	'Victor Sada'
+'C2',	'FCB',	'Juan Carlos Navarro'
+'C3',	'FCB',	'Fran Vazquez'
+'C4',	'FCB',	'Joe Ingles'
+'C5',	'FCB',	'Boniface Ndong'
+'D1',	'UNI',	'Berni Rodriguez'
+'D2',	'UNI',	'Jorge Garbajosa'
+'D3',	'UNI',	'Luka Zoric'
+'D4',	'UNI',	'Alberto Diaz'
+'D5',	'UNI',	'Joel Freeland'
+'E1',	'VAL',	'Rodrigo San Miguel'
+'E2',	'VAL',	'Victor Claver'
+'E3',	'VAL',	'Alberto Perez'
+'E4',	'VAL',	'Taquan Dean'
+'E5',	'VAL',	'Juanlu Navarro'
+'F1',	'REG',	'Huertas, Marcelinho'
+'F2',	'REG',	'Jawai, Nathan'
+'F3',	'REG',	'Lorbek, Eraem'
+'F4',	'REG',	'Tomic, Ante'
+'F5',	'REG',	'Jasikeviius, Arnas'
+'G1',	'BIZ',	'Zisis, Nikolaos'
+'G2',	'BIZ',	'Rakovich, Milovan'
+'G3',	'BIZ',	'Pilepic, Fran'
+'G4',	'BIZ',	'Hamilton, Lamont'
+'G5',	'BIZ',	'Vasileiadis, Kostas'
+'H1',	'BLR',	'Faverani, Vitor'
+'H2',	'BLR',	'Markovick, Stefan'
+'H3',	'BLR',	'Doellman, Justin'
+'H4',	'BLR',	'Dubljevic, Bojan'
+'H5',	'BLR',	'Hanley, Will'
+'I1',	'VLB',	'Pietrus, Florent'
+'I2',	'VLB',	'Kelati, Thomas'
+'I3',	'VLB',	'Robinson, Jason'
+'I4',	'VLB',	'Hrycaniuk, Adam'
+'I5',	'VLB',	'Martinez, Rafa'
+
+@encuentros(eq1/char,eq2/char,fecha/char,res1/numeric,res2/numeric):eq1,eq2
+'CAL',	'VAL',	'22/10/14'	,72	,82
+'UNI',	'VAL',	'25/02/15'	,58,	68
+'RMA',	'VAL',	'03/11/14',	81	,64
+'RMA',	'FCB',	'03/01/15',	78	,74
+'UNI',	'RMA',	'12/11/14',	80	,96
+'CAL',	'FCB',	'17/12/14',	71	,60
+'FCB',	'UNI',	'10/12/14'	,72	,62
+'FCB',	'VAL',	'24/05/15',	84	,57
+'RMA',	'CAL',	'21/01/15',	84,	73
+'UNI',	'CAL',	'25/11/14',	79,	66
+'REG',	'BIZ',	'29/09/15',	73,	89
+'BLR',	'VLB',	'01/10/15',	78,	111
+'REG',	'BLR',	'09/10/15',	101,	89
+'BIZ',	'VLB',	'12/10/15',	87,	99
+'VLB',	'REG',	'15/10/15',	120,	80
+'BLR',	'BIZ',	'18/10/15',	110,	99
+'REG',	'VLB',	'29/10/15',	91,	99
+'BIZ',	'BLR',	'01/11/15',	97,	89
+'BIZ',	'REG',	'07/11/15',	79,	88
+'VLB',	'BLR',	'12/11/15',	71,	88
+@faltas(codJ/char,eq1/char,eq2/char,num/numeric):codJ,eq1,eq2
+'F1',	'REG',	'BIZ',	1
+'G3',	'REG',	'BIZ',	2
+'F4',	'REG',	'BIZ',	2
+'G2',	'REG',	'BIZ',	3
+'G1',	'REG',	'BIZ',	1
+'C3',	'FCB',	'UNI',	4
+'D5',	'FCB',	'UNI',	3
+'C5',	'FCB',	'UNI',	2
+'D1',	'FCB',	'UNI',	3
+'D4',	'FCB',	'UNI',	1
+'B3',	'RMA',	'VAL',	1
+'B2',	'RMA',	'VAL',	1
+'E1',	'RMA',	'VAL',	2
+'E5',	'RMA',	'VAL',	3
+'B5',	'RMA',	'VAL',	4
+'B1',	'RMA',	'VAL',	4
+'E2',	'RMA',	'VAL',	4
+'F5',	'VLB',	'REG',	1
+'I3',	'VLB',	'REG',	1
+'I4',	'VLB',	'REG',	1
+'F2',	'VLB',	'REG',	1
+
+
+ 

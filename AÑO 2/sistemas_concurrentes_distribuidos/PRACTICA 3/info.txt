@@ -1,0 +1,82 @@
+####################################################################################################
+
+Nombre:		Juan Carlos Ruiz García
+DNI:		26510953-A
+Grupo:		C2
+
+####################################################################################################
+
+Fichero:	prodcons.cpp
+Nº Procesos:	10
+Nº Iteraciones:	20
+
+Explicacion:
+	En este ejercicio he modificado/añadido:
+		- Variables globales
+			- Rank del Productor de 0 a 1
+			- TAM del vector a 5
+		- Main:
+			- He cambiado el size de 3 a 10 debido a que se deben lanzar 10 procesos de los cuales 5 seran productores,
+			1 sera el Buffer y 4 consumidores.
+		- Consumidor:
+			- El numero de iteraciones del for sera de 0 a 4, ya que cada consumidor debe consumir 5 veces.
+			- Añado la variable rank para identificar a cada consumidor.
+			- En el MPI_Ssend cambio la etiqueta de 0 por la Etiqueta_consumidor, para indicarle al buffer que el mensaje enviado es de un consumidor.
+		- Productor:
+			- El numero de iteraciones del for sera de 0 a 3 ya que cada productor debe consumir 4 veces. 
+			- Creo dos variables nuevas, value (valor producido enviado al buffer) y rank (identificador de cada productor).
+			- En el MPI_Ssend cambio el valor que se envia i por value y además cambio la etiqueta del mensaje de 0 a Etiqueta_productor para indicarle
+			al buffer que el mensaje enviado es de un productor.
+		- Buffer
+			- El numero de iteraciones del for sera de 0 a ITERS*2 ya que el buffer debe operar 40 veces, 20 para todos los productores y 20 para todos
+			los consumidores.
+			- Switch
+				- Case 0: En el MPI_Recv cambio el fuente de Productor a MPI_ANY_SOURCE ya que identificare el mensaje con la etiqueta y no con la fuente origen.
+				Tambien	cambio la etiqueta de 0 a Etiqueta_productor para asegurarme que el mensaje recibido es de un productor.
+				- Case 1: En el MPI_Recv cambio el fuente de Productor a MPI_ANY_SOURCE ya que identificare el mensaje con la etiqueta y no con la fuente origen.
+				Tambien	cambio la etiqueta de 0 a Etiqueta_consumidor para asegurarme que el mensaje recibido es de un consumidor.
+				En el MPI_Ssend cambio el fuente de Consumidor por status.MPI_SOURCE para enviarle el mensaje a dicho consumidor indicandole que puede consumir.
+
+####################################################################################################
+
+Fichero:	filosofos.cpp
+Nº Hebras:	10
+
+Explicación:
+	Este ejercicio lo he planteado de la siguiente forma:
+		- Main:
+			- Me aseguro que el numero de procesos es 10. Los procesos pares llaman a Filosofo y los impares a Tenedor.
+		- Filosofo:
+			- Aquí es donde se podría producir un interbloqueo. Imaginemos el caso en que todos los filosofos cogieran el tenedor de su izquierda a la
+			vez y cada uno se quedaría esperando a que el filosofo de su derecha soltara su tenedor poder comer. Todos los filosofos estarían en la mesa
+			con un tenedor en la mano izquierda y nadie comiendo. Para evitar esto lo que hacemos es que uno de los filosofos (en mi caso el primero), 
+			cambiará el orden de coger los tenedores, cogiendo primero el tenedor de su derecha y luego el de su izquierda. De esta forma, siempre habrá 
+			al menos un filosofo con dos tenedores y podrá comer.
+			- Cada filosofo solicita su tenedor izquierdo (menos el primero) y seguidamente su derecho, cuando tienen ambos tenedores comen (sleep). Seguidamente
+			cada filosofo solicita soltar los tenedores de nuevo en la mesa en el mismo orden que los cogió y se pondra a dormir.
+		- Tenedor:
+			- Cada tenedor espera un mensaje de cualquier filosofo vecino para coger el tenedor. Seguidamente espera un mensaje del filosofo que cogio el tenedor
+			solicitando soltar el tenedor.
+
+####################################################################################################
+
+Fichero:	filosofos_camarero.cpp
+Nº Hebras:	11
+
+Explicacion:
+	Este ejercicio lo he planteado de la siguiente forma:
+		- Main:
+			- Me aseguro que el numero de procesos es 11. Los procesos pares llaman a Filosofo, los impares a Tenedor y el proceso 10 a Camarero.
+		- Filosofo:
+			- En este ejercicio para evitar el interbloqueo, cada filosofo lo que hace es solicitar al camarero permiso para sentarse en la mesa, el cual
+			debe de permitir que se sienten como máximo 4 filosofos en la mesa teniendo así siempre almenos a un filosofo comiendo y evitando el interbloqueo.
+			Para esto, cada filosofo lo primero que hace es solicitar al camarero un asiento, una vez se lo da el proceso es el mismo que en el ejercicio 
+			de "filosofos.cpp", pero al finalizar debe solicitar al camarero levantarse de la silla para poder ir a dormir.
+		- Tenedor:
+			- Igual que en el ejercicio "filosofos.cpp"
+		- Camarero:
+			- El camarero tiene una variable local llamada "asientos_libres" que inicialmente esta a 4.
+			- En cada iteración este comprueba si el numero de asientos_libres == 0, en este caso se bloquea hasta que le llegue un mensaje de un filosofo 
+			solicitando levantarse de la silla y asientos_libres++. En caso contrario, el camarero espera un mensaje desde cualquier fuente y con cualquier 
+			etiqueta, para después mirar mediante status.MPI_TAG si la etiqueta es ETQ_LEVANTARSE (asientos_libres++) o ETQ_SENTARSE (asientos_libres--). 
+		

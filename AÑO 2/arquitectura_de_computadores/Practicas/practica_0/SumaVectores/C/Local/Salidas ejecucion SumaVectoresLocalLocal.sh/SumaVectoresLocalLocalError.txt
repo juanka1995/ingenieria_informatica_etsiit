@@ -1,0 +1,8 @@
+./Local/SumaVectoresLocalLocal.sh: line 5:  7508 Segmentation fault      "`pwd`"/Local/SumaVectoresLocal $N
+./Local/SumaVectoresLocalLocal.sh: line 5:  7510 Segmentation fault      "`pwd`"/Local/SumaVectoresLocal $N
+./Local/SumaVectoresLocalLocal.sh: line 5:  7512 Segmentation fault      "`pwd`"/Local/SumaVectoresLocal $N
+./Local/SumaVectoresLocalLocal.sh: line 5:  7514 Segmentation fault      "`pwd`"/Local/SumaVectoresLocal $N
+./Local/SumaVectoresLocalLocal.sh: line 5:  7516 Segmentation fault      "`pwd`"/Local/SumaVectoresLocal $N
+./Local/SumaVectoresLocalLocal.sh: line 5:  7518 Segmentation fault      "`pwd`"/Local/SumaVectoresLocal $N
+./Local/SumaVectoresLocalLocal.sh: line 5:  7520 Segmentation fault      "`pwd`"/Local/SumaVectoresLocal $N
+./Local/SumaVectoresLocalLocal.sh: line 5:  7522 Segmentation fault      "`pwd`"/Local/SumaVectoresLocal $N

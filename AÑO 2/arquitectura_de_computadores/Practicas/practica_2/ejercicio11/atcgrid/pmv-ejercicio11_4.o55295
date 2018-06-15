@@ -1,0 +1,39 @@
+Id. usuario del trabajo: C2estudiante17
+Id. del trabajo: 55295.atcgrid
+Nombre del trabajo especificado por usuario: pmv-ejercicio11
+Nodo que ejecuta qsub: atcgrid
+Directorio en el que se ha ejecutado qsub: /home/C2estudiante17
+Cola: ac
+Nodos asignados al trabajo:
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+atcgrid1
+Tiempo(seg.):0.012906943	 Tamaño vectores y matriz:100	 V2[0]=(5050.000000) V2[99]=(10049.500000) 
+Tiempo(seg.):0.039718151	 Tamaño vectores y matriz:200	 V2[0]=(40200.000000) V2[199]=(80199.000000) 
+Tiempo(seg.):0.007447015	 Tamaño vectores y matriz:400	 V2[0]=(320800.000000) V2[399]=(640798.000000) 
+Tiempo(seg.):0.007446369	 Tamaño vectores y matriz:800	 V2[0]=(2563200.000000) V2[799]=(5123196.000000) 
+Tiempo(seg.):0.018507499	 Tamaño vectores y matriz:1600	 V2[0]=(20492800.000000) V2[1599]=(40972792.000000) 
+Tiempo(seg.):0.032698316	 Tamaño vectores y matriz:3200	 V2[0]=(163891200.000000) V2[3199]=(327731184.000000) 
+Tiempo(seg.):0.065336550	 Tamaño vectores y matriz:6400	 V2[0]=(1310924800.000000) V2[6399]=(2621644768.000000) 
+Tiempo(seg.):0.196722420	 Tamaño vectores y matriz:12800	 V2[0]=(10486579200.000000) V2[12799]=(20972339136.000000) 

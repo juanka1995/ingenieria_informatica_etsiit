@@ -1,0 +1,31 @@
+#!/bin/bash
+
+read -p "Introduce el mes a buscar (num o 3 letras): " mes
+case $mes in
+	1 | ENE | ene)
+		echo "Enero";;
+	2 | FEB | feb)
+		echo "Febrero";;
+	3 | MAR | mar)
+		echo "Marzo";;
+	4 | ABR | abr)
+		echo "Abril";;
+	5 | MAY | may)
+		echo "Mayo";;
+	6 | JUN | jun)
+		echo "Junio";;
+	7 | JUL | jul)
+		echo "Julio";;
+	8 | AGO | ago)
+		echo "Agosto";;
+	9 | SEP | sep)
+		echo "Septiembre";;
+	10 | OCT | oct)
+		echo "Octubre";;
+	11 | NOV | nov)
+		echo "Noviembre";;
+	12 | DIC | dic)
+		echo "Diciembre";;
+	*)
+		echo "No has introducido un mes correcto";;
+esac

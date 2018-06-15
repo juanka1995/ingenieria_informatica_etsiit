@@ -1,0 +1,45 @@
+####################################################################################################
+
+Nombre:		Juan Carlos Ruiz García
+DNI:		26510953-A
+Grupo:		C2
+
+####################################################################################################
+
+Fichero:	fumadores.cpp
+Nº Semaforos:	5
+Nº Hebras:	4
+
+Explicacion:
+	En este ejercicio utilizo:
+		- 5 semaforos de los cuales:
+			- 3 para controlar que fumador puede o no fumar (en un vector) --> Ini: 0
+			- 1 para controlar cuando el estanquero pone un producto en la mesa --> Ini: 1
+			- 1 para controlar la salida por pantalla de los comentarios de forma correcta --> Ini: 1
+		- 4 hebras:
+			- una hebra para cada fumador y la otra para el estanquero.
+
+####################################################################################################
+
+Fichero:	prod-cons_fifo.cpp
+Nº Semaforos:	3
+Nº Hebras:	2
+
+Explicación:
+	En este ejercicio utilizo:
+		- 3 semaforos de los cuales:
+			- 1 es para controlar cuando el productor produce --> Ini: 10
+			- 1 es para controlar cuando el consumidor consume --> Ini: 0
+			- 1 es para controlar la exclusion mutua --> Ini: 1
+		- 2 hebras:
+			- una hebra para lanzar el consumidor y otra el productor
+
+####################################################################################################
+
+Fichero:	prod-cons_lifo.cpp
+Nº Semaforos:	3
+Nº Hebras:	2
+
+Explicacion:
+	Es exactamente igual que el "prod-cons_fifo.cpp"
+		

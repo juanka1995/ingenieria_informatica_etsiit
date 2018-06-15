@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#Filtro para que la entrada de datos sea 1
+if [ $# -eq 1 ]; then
+	#Compruebo que el parametro introducido sea un directorio
+	if test -d $1; then
+		# Guardo en archivo una lista con todo el contenido del directorio introducido
+		# grep -v '/$' elimina la linea con el propio directorio
+		for archivo in $(find $1 -maxdepth 1 | grep -v '/$')
+			do 
+				#Compruebo el contenido de la lista viendo si es Fichero, Directorio o Enlace
+				if test -f $archivo; then
+					echo "Fichero regular: $archivo"				
+				elif test -d $archivo; then
+					echo "Directorio: $archivo"
+				elif  test -L $archivo; then
+					echo "Enlace: $archivo"				
+				fi
+			done
+	else
+		echo "$1 no es un directorio existente"	
+	fi
+else
+	echo "Introduce los parametros correctos"
+
+fi

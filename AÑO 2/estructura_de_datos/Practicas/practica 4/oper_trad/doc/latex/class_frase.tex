@@ -1,0 +1,167 @@
+\hypertarget{class_frase}{}\section{Frase Class Reference}
+\label{class_frase}\index{Frase@{Frase}}
+
+
+T.\+D.\+A. \hyperlink{class_frase}{Frase}.  
+
+
+
+
+{\ttfamily \#include $<$frase.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_frase_1_1const__iterator}{const\+\_\+iterator}
+\begin{DoxyCompactList}\small\item\em Clase del iterador constante para iterar sobre un \hyperlink{class_frase}{Frase}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_frase_1_1const__iterator}{const\+\_\+iterator} \hyperlink{class_frase_a700666d5980f370b8c646f7d5e71de1c}{begin} () const 
+\begin{DoxyCompactList}\small\item\em Metodo encargado de devolver un iterador constante con la posicion de la primera entrada del vector. \end{DoxyCompactList}\item 
+\hyperlink{class_frase_1_1const__iterator}{const\+\_\+iterator} \hyperlink{class_frase_afc004f077e8bca4f76b4c7caca4c2641}{end} () const 
+\begin{DoxyCompactList}\small\item\em Metodo encargado de devolver un iterador constante con la posicion de la ultima entrada del vector. \end{DoxyCompactList}\item 
+\hyperlink{class_frase_a6af6ccf07cac65950917bc81f5e03c95}{Frase} ()\hypertarget{class_frase_a6af6ccf07cac65950917bc81f5e03c95}{}\label{class_frase_a6af6ccf07cac65950917bc81f5e03c95}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\hyperlink{class_frase_afec194c2d5d169d5e9a22333a595188b}{Frase} (string ff)
+\begin{DoxyCompactList}\small\item\em Construye una frase a partir de un string con sus traducciones. \end{DoxyCompactList}\item 
+vector$<$ string $>$ \hyperlink{class_frase_a8e402ede6cd22f97aa3b76678ae87805}{Get\+Destino} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve el vector destino que contiene las traducciones de la frases. \end{DoxyCompactList}\item 
+string \hyperlink{class_frase_a57a41696b44dbe4941957225fcc6e789}{Get\+Origen} () const 
+\begin{DoxyCompactList}\small\item\em Devuelve la frase. \end{DoxyCompactList}\item 
+void \hyperlink{class_frase_a3581733d29ed02b57904543fc0385833}{Insertar\+Destino} (const string \&nuevo\+\_\+dest)\hypertarget{class_frase_a3581733d29ed02b57904543fc0385833}{}\label{class_frase_a3581733d29ed02b57904543fc0385833}
+
+\begin{DoxyCompactList}\small\item\em Inserta un nuevo destino al final del vector de destinos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{class_frase_ae7c5f5b2357a6fe4a2824a1590be3fa3}{operator$<$$<$} (ostream \&os, const \hyperlink{class_frase}{Frase} \&f)
+\begin{DoxyCompactList}\small\item\em Sobrecarga el operador $<$$<$ para mostrar cada frase con sus correspondientes traducciones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T.\+D.\+A. \hyperlink{class_frase}{Frase}. 
+
+Una instancia de una frase es un objeto que contiene un dato de tipo string el cual contiene la frase en el idioma origen, y un dato de tipo vector$<$string$>$ que contiene las correspondientes traducciones de la frase en el idioma destino.
+
+Un ejemplo de su uso\+: 
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+
+
+\begin{DoxyAuthor}{Author}
+Juan Carlos Ruiz García 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Diciembre 2016 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Frase@{Frase}!Frase@{Frase}}
+\index{Frase@{Frase}!Frase@{Frase}}
+\subsubsection[{\texorpdfstring{Frase(string ff)}{Frase(string ff)}}]{\setlength{\rightskip}{0pt plus 5cm}Frase\+::\+Frase (
+\begin{DoxyParamCaption}
+\item[{string}]{ff}
+\end{DoxyParamCaption}
+)}\hypertarget{class_frase_afec194c2d5d169d5e9a22333a595188b}{}\label{class_frase_afec194c2d5d169d5e9a22333a595188b}
+
+
+Construye una frase a partir de un string con sus traducciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ff\+:string} & que contiene la frase y sus traducciones \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Frase@{Frase}!begin@{begin}}
+\index{begin@{begin}!Frase@{Frase}}
+\subsubsection[{\texorpdfstring{begin() const }{begin() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Frase\+::const\+\_\+iterator} Frase\+::begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_frase_a700666d5980f370b8c646f7d5e71de1c}{}\label{class_frase_a700666d5980f370b8c646f7d5e71de1c}
+
+
+Metodo encargado de devolver un iterador constante con la posicion de la primera entrada del vector. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un \hyperlink{class_frase_1_1const__iterator}{const\+\_\+iterator} apuntando a la primera entrada del vector de destinos 
+\end{DoxyReturn}
+\index{Frase@{Frase}!end@{end}}
+\index{end@{end}!Frase@{Frase}}
+\subsubsection[{\texorpdfstring{end() const }{end() const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Frase\+::const\+\_\+iterator} Frase\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_frase_afc004f077e8bca4f76b4c7caca4c2641}{}\label{class_frase_afc004f077e8bca4f76b4c7caca4c2641}
+
+
+Metodo encargado de devolver un iterador constante con la posicion de la ultima entrada del vector. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un \hyperlink{class_frase_1_1const__iterator}{const\+\_\+iterator} apuntando a la ultima entrada del vector de destinos 
+\end{DoxyReturn}
+\index{Frase@{Frase}!Get\+Destino@{Get\+Destino}}
+\index{Get\+Destino@{Get\+Destino}!Frase@{Frase}}
+\subsubsection[{\texorpdfstring{Get\+Destino() const }{GetDestino() const }}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ string $>$ Frase\+::\+Get\+Destino (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_frase_a8e402ede6cd22f97aa3b76678ae87805}{}\label{class_frase_a8e402ede6cd22f97aa3b76678ae87805}
+
+
+Devuelve el vector destino que contiene las traducciones de la frases. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve el vector destino 
+\end{DoxyReturn}
+\index{Frase@{Frase}!Get\+Origen@{Get\+Origen}}
+\index{Get\+Origen@{Get\+Origen}!Frase@{Frase}}
+\subsubsection[{\texorpdfstring{Get\+Origen() const }{GetOrigen() const }}]{\setlength{\rightskip}{0pt plus 5cm}string Frase\+::\+Get\+Origen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_frase_a57a41696b44dbe4941957225fcc6e789}{}\label{class_frase_a57a41696b44dbe4941957225fcc6e789}
+
+
+Devuelve la frase. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve el string que contiene la frase 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Frase@{Frase}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Frase@{Frase}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{ostream \&}]{os, }
+\item[{const {\bf Frase} \&}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_frase_ae7c5f5b2357a6fe4a2824a1590be3fa3}{}\label{class_frase_ae7c5f5b2357a6fe4a2824a1590be3fa3}
+
+
+Sobrecarga el operador $<$$<$ para mostrar cada frase con sus correspondientes traducciones. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os\+:flujo} & de salida \\
+\hline
+{\em f\+:frase} & que vamos a mostrar con sus traducciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el flujo de salida 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{frase_8h}{frase.\+h}\item 
+include/frase.\+hxx\end{DoxyCompactItemize}

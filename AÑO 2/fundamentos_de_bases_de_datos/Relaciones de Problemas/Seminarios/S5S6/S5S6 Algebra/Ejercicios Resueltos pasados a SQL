@@ -1,0 +1,60 @@
+a)
+select distinct codpro form ventas where codpj='J1';
+
+b)
+select * from ventas where cantidad>100;
+
+c)
+select nompie,nompro,nompj from pieza natural join proyecto natural join proveedor;
+
+d)
+select distinct nompie from pieza natural join ventas natural join (select codpro from proveedor where ciudad='Londres');
+
+e)
+select distinct s.ciudad,j.ciudad from (proveedor s inner join ventas spj natural join proyecto j on (s.codpro=spj.codpro));
+
+f)
+select distinct codpie from ventas natural join (select codpro,codpj from proveedor natural join proyecto);
+
+g)
+select distinct codpj from ventas natural join (select codpro,codpj from proveedor inner join proyecto on(proveedor.ciudad<>proyecto.ciudad));
+
+h)
+select ciudad from proveedor union (select ciudad from proyecto);
+
+i)
+select ciudad from proveedor minus (select ciudad from pieza);
+
+j)
+select ciudad from proveedor intersect (select ciudad from pieza)
+
+k)
+select distinct codpj from ventas natural join (select codpie from ventas where codpro='S1');
+
+l)
+select cantidad from ventas minus (select spj.cantidad from ventas spj,ventas where spj.cantidad>ventas.cantidad);
+
+m)
+select distinct codpj from proyecto minus 
+(select codpj from (select codpie from pieza where color='Rojo')
+natural join ventas 
+natural join (select codpro from proveedor where ciudad='Londres'));
+
+n)
+select codpj from ventas where codpro='S1' minus (select codpj from ventas where codpro<>'S1');
+
+ñ)
+select codpie from pieza p where not exists (select codpj from proyecto where ciudad='Paris' minus
+select codpj from ventas spj where spj.codpie=p.codpie) order by codpie;
+
+o)
+select distinct v.codpro from ventas v where not exists (select codpj from proyecto minus
+select spj.codpj from ventas spj where v.codpie=spj.codpie and v.codpj=spj.codpj);
+
+p)
+select distinct v.codpj from ventas v where v.codpro='S1' and not exists (select codpie from pieza minus
+select spj.codpie from ventas spj where spj.codpro=v.codpro and spj.codpj=v.codpj);
+
+q)
+select v.codpro from ventas v where not exists(select codpie,codpj from pieza,proyecto minus
+select spj.codpie,spj.codpj from ventas spj where v.codpro=spj.codpro);
