@@ -6,3 +6,5 @@ Aquí adjunto todas las asignaturas que he ido cursando durante el grado organiz
 Espero que sea de utilidad ;)
 
 Curso de inicio: 2015/2016
+
+Curso de fin: 2018/2019
